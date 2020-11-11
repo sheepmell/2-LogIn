@@ -20,6 +20,11 @@ namespace _2_LogIn
 
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
+            if (this.txt_Password.Text=="")
+            {
+                MessageBox.Show("请输入密码！");
+                return;
+            }
             string commandText =
                 $@"SELECT 1
                    FROM tb_Student AS S
@@ -31,11 +36,27 @@ namespace _2_LogIn
             if (result==1)
             {
                 MessageBox.Show("登陆成功！");
+                frm_StudentInfo frm_StudentInfo = new frm_StudentInfo(this.txt_No.Text);
+                frm_StudentInfo.Show();
+                this.Close();
             }
             else
             {
                 MessageBox.Show("登陆失败！");
             }
+
+            this.txt_No.Text = "";
+            this.txt_Password.Text = "";
+        }
+
+        private void frm_LogIn_Load(object sender, EventArgs e)
+        {
+            this.btn_LogIn.Enabled = false;
+        }
+
+        private void txt_No_TextChanged(object sender, EventArgs e)
+        {
+            this.btn_LogIn.Enabled = this.txt_No.Text != "";
         }
     }
 }
