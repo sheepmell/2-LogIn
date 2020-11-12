@@ -50,5 +50,25 @@ namespace _2_LogIn
             }
             
         }
+
+        private void btn_Submit_Click(object sender, EventArgs e)
+        {
+            string commandText=
+                $@"UPDATE tb_Student SET 
+                     NO='{this.txt_No.Text}',NAME='{this.txt_Name.Text}',
+                     Gender='{this.txt_Gender.Text}',BirthDate='{this.txt_BirthDate.Text}',
+                     Class='{this.txt_Class.Text}',PhoneNumber='{this.txt_PhoneNumber.Text}'
+                     WHERE No = '{this.txt_No.Text}'; ";
+            SqlHelper sqlHelper = new SqlHelper();
+            int result = sqlHelper.QuickReturn<int>(commandText);
+            if (result==0)
+            {
+                MessageBox.Show("更改成功！");
+            }
+            else
+            {
+                MessageBox.Show("更改失败！");
+            }
+        }
     }
 }

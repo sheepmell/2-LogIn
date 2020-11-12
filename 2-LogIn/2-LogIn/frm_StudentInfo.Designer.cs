@@ -133,6 +133,7 @@
             this.btn_Submit.TabIndex = 24;
             this.btn_Submit.Text = "提交";
             this.btn_Submit.UseVisualStyleBackColor = true;
+            this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
             // 
             // txt_BirthDate
             // 
