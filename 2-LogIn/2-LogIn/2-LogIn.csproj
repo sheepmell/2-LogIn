@@ -81,11 +81,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="我的桌面\frm_ChangeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的桌面\frm_ChangeInfo.Designer.cs">
+      <DependentUpon>frm_ChangeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="我的桌面\frm_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的桌面\frm_ChangePassword.Designer.cs">
+      <DependentUpon>frm_ChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_LogIn.Designer.cs">
       <DependentUpon>frm_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="我的桌面\frm_Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的桌面\frm_Message.Designer.cs">
+      <DependentUpon>frm_Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="我的桌面\frm_Notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的桌面\frm_Notice.Designer.cs">
+      <DependentUpon>frm_Notice.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_StudentInfo.cs">
       <SubType>Form</SubType>
@@ -93,13 +117,34 @@
     <Compile Include="frm_StudentInfo.Designer.cs">
       <DependentUpon>frm_StudentInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Homepage.Designer.cs">
+      <DependentUpon>frm_Homepage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="我的桌面\frm_ChangeInfo.resx">
+      <DependentUpon>frm_ChangeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="我的桌面\frm_ChangePassword.resx">
+      <DependentUpon>frm_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_LogIn.resx">
       <DependentUpon>frm_LogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="我的桌面\frm_Message.resx">
+      <DependentUpon>frm_Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="我的桌面\frm_Notice.resx">
+      <DependentUpon>frm_Notice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_StudentInfo.resx">
       <DependentUpon>frm_StudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Homepage.resx">
+      <DependentUpon>frm_Homepage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

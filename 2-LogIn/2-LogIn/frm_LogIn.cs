@@ -20,9 +20,14 @@ namespace _2_LogIn
 
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
+            if (this.txt_No.Text == "")
+            {
+                MessageBox.Show("账号不可为空！");
+                return;
+            }
             if (this.txt_Password.Text=="")
             {
-                MessageBox.Show("请输入密码！");
+                MessageBox.Show("密码不可为空！");
                 return;
             }
             string commandText =

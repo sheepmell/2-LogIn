@@ -49,6 +49,7 @@ namespace _2_LogIn
                 this.txt_PhoneNumber.Text = sqlHelper["PhoneNumber"].ToString();
             }
             
+            
         }
 
         private void btn_Submit_Click(object sender, EventArgs e)
@@ -69,6 +70,13 @@ namespace _2_LogIn
             {
                 MessageBox.Show("更改失败！");
             }
+        }
+
+        private void btn_Homepage_Click(object sender, EventArgs e)
+        {
+            frm_Homepage frm_Homepage = new frm_Homepage(this.txt_No.Text);
+            frm_Homepage.Show();
+            this.Close();
         }
     }
 }

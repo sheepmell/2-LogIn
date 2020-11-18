@@ -41,6 +41,7 @@
             this.btn_Submit = new System.Windows.Forms.Button();
             this.txt_BirthDate = new System.Windows.Forms.TextBox();
             this.txt_Gender = new System.Windows.Forms.TextBox();
+            this.btn_Homepage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_PhoneNumber
@@ -68,6 +69,7 @@
             // 
             this.txt_No.Location = new System.Drawing.Point(112, 71);
             this.txt_No.Name = "txt_No";
+            this.txt_No.ReadOnly = true;
             this.txt_No.Size = new System.Drawing.Size(183, 28);
             this.txt_No.TabIndex = 18;
             // 
@@ -127,7 +129,7 @@
             // 
             // btn_Submit
             // 
-            this.btn_Submit.Location = new System.Drawing.Point(272, 284);
+            this.btn_Submit.Location = new System.Drawing.Point(220, 286);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(75, 34);
             this.btn_Submit.TabIndex = 24;
@@ -149,11 +151,22 @@
             this.txt_Gender.Size = new System.Drawing.Size(173, 28);
             this.txt_Gender.TabIndex = 28;
             // 
+            // btn_Homepage
+            // 
+            this.btn_Homepage.Location = new System.Drawing.Point(356, 286);
+            this.btn_Homepage.Name = "btn_Homepage";
+            this.btn_Homepage.Size = new System.Drawing.Size(75, 34);
+            this.btn_Homepage.TabIndex = 29;
+            this.btn_Homepage.Text = "主页";
+            this.btn_Homepage.UseVisualStyleBackColor = true;
+            this.btn_Homepage.Click += new System.EventHandler(this.btn_Homepage_Click);
+            // 
             // frm_StudentInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 382);
+            this.Controls.Add(this.btn_Homepage);
             this.Controls.Add(this.txt_Gender);
             this.Controls.Add(this.txt_BirthDate);
             this.Controls.Add(this.btn_Submit);
@@ -190,5 +203,6 @@
         private System.Windows.Forms.Button btn_Submit;
         private System.Windows.Forms.TextBox txt_BirthDate;
         private System.Windows.Forms.TextBox txt_Gender;
+        private System.Windows.Forms.Button btn_Homepage;
     }
 }
