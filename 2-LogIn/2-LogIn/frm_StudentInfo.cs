@@ -17,6 +17,7 @@ namespace _2_LogIn
         public frm_StudentInfo()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.FormClosed += Frm_StudentInfo_FormClosed;
         }
         public frm_StudentInfo(string studentNo):this()

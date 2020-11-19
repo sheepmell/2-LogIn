@@ -18,7 +18,17 @@ namespace _2_LogIn
         public frm_ChangePassword()
         {
             InitializeComponent();
+            this.FormClosed += Frm_ChangePassword_FormClosed;
         }
+
+        private void Frm_ChangePassword_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
+        }
+
         public frm_ChangePassword(string studentNo) : this()
         {
             this._StudentNo = studentNo;

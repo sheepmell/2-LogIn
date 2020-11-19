@@ -16,23 +16,30 @@ namespace _2_LogIn
         public frm_Message()
         {
             InitializeComponent();
+            this.FormClosed += Frm_Message_FormClosed;
+        }
+
+        private void Frm_Message_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
         }
 
         private void frm_Message_Load(object sender, EventArgs e)
         {
-            string CommandText = $@"Select * From tb_Message;";
-            SqlHelper sqlHelper = new SqlHelper();
-            sqlHelper.QuickRead(CommandText);
-            if (sqlHelper.HasRecord)
-            {
-                int index = this.gv_Message.Rows.Add();
-                this.gv_Message.Rows[index].Cells[0].Value = sqlHelper["No"].ToString();
-                this.gv_Message.Rows[index].Cells[1].Value = sqlHelper["Title"].ToString();
-                this.gv_Message.Rows[index].Cells[2].Value = sqlHelper["Category"].ToString();
-                this.gv_Message.Rows[index].Cells[3].Value = sqlHelper["Sender"].ToString();
-                this.gv_Message.Rows[index].Cells[4].Value = sqlHelper["SendTime"].ToString();
-                this.gv_Message.Rows[index].Cells[5].Value = sqlHelper["Operation"].ToString();
-            }
+            // TODO: 这行代码将数据加载到表“educationalSystemDataSet1.tb_Messege”中。您可以根据需要移动或删除它。
+            this.tb_MessegeTableAdapter.Fill(this.educationalSystemDataSet1.tb_Messege);
+
+        }
+
+        private void gv_Notice_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string Noitce = gv_Notice.Rows[e.RowIndex].Cells["Detail"].Value.ToString();
+            MessageBox.Show(Noitce);
+            gv_Notice.Rows[e.RowIndex].Cells["Status"].Value = "已读";
         }
     }
+    
 }

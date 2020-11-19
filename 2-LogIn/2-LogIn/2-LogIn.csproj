@@ -48,6 +48,7 @@
       <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
@@ -81,6 +82,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="学籍成绩\frm_ApplyExchangeStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学籍成绩\frm_ApplyExchangeStudent.Designer.cs">
+      <DependentUpon>frm_ApplyExchangeStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学籍成绩\frm_ProfessionalDiversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学籍成绩\frm_ProfessionalDiversion.Designer.cs">
+      <DependentUpon>frm_ProfessionalDiversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学籍成绩\frm_ResultsExchangeStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学籍成绩\frm_ResultsExchangeStudents.Designer.cs">
+      <DependentUpon>frm_ResultsExchangeStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学籍成绩\frm_SelectionExchangeStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学籍成绩\frm_SelectionExchangeStudents.Designer.cs">
+      <DependentUpon>frm_SelectionExchangeStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学籍成绩\frm_StatusAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学籍成绩\frm_StatusAlarm.Designer.cs">
+      <DependentUpon>frm_StatusAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学籍成绩\frm_StatusError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学籍成绩\frm_StatusError.Designer.cs">
+      <DependentUpon>frm_StatusError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学籍成绩\frm_StatusInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学籍成绩\frm_StatusInfo.Designer.cs">
+      <DependentUpon>frm_StatusInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL\EducationalSystem.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EducationalSystem.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="SQL\EducationalSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EducationalSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SQL\EducationalSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EducationalSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="学籍成绩\frm_StudentStatusCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学籍成绩\frm_StudentStatusCard.Designer.cs">
+      <DependentUpon>frm_StudentStatusCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\Windows\SystemParameters.cs" />
     <Compile Include="我的桌面\frm_ChangeInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +190,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="学籍成绩\frm_ApplyExchangeStudent.resx">
+      <DependentUpon>frm_ApplyExchangeStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学籍成绩\frm_ProfessionalDiversion.resx">
+      <DependentUpon>frm_ProfessionalDiversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学籍成绩\frm_ResultsExchangeStudents.resx">
+      <DependentUpon>frm_ResultsExchangeStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学籍成绩\frm_SelectionExchangeStudents.resx">
+      <DependentUpon>frm_SelectionExchangeStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学籍成绩\frm_StatusAlarm.resx">
+      <DependentUpon>frm_StatusAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学籍成绩\frm_StatusError.resx">
+      <DependentUpon>frm_StatusError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学籍成绩\frm_StatusInfo.resx">
+      <DependentUpon>frm_StatusInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学籍成绩\frm_StudentStatusCard.resx">
+      <DependentUpon>frm_StudentStatusCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="我的桌面\frm_ChangeInfo.resx">
       <DependentUpon>frm_ChangeInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +245,36 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="SQL\EducationalSystem.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>EducationalSystem.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SQL\EducationalSystem.dbml.layout">
+      <DependentUpon>EducationalSystem.dbml</DependentUpon>
+    </None>
+    <None Include="SQL\EducationalSystemDataSet.xsc">
+      <DependentUpon>EducationalSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SQL\EducationalSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EducationalSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SQL\EducationalSystemDataSet.xss">
+      <DependentUpon>EducationalSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SQL\EducationalSystemDataSet1.xsc">
+      <DependentUpon>EducationalSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SQL\EducationalSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EducationalSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SQL\EducationalSystemDataSet1.xss">
+      <DependentUpon>EducationalSystemDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -172,5 +291,9 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

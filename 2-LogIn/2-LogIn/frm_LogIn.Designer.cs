@@ -31,8 +31,8 @@
             this.btn_LogIn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_Password = new System.Windows.Forms.TextBox();
             this.txt_No = new System.Windows.Forms.TextBox();
+            this.txt_Password = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_LogIn
@@ -63,29 +63,29 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "密码：";
             // 
-            // txt_Password
-            // 
-            this.txt_Password.Location = new System.Drawing.Point(132, 122);
-            this.txt_Password.Name = "txt_Password";
-            this.txt_Password.PasswordChar = '*';
-            this.txt_Password.Size = new System.Drawing.Size(212, 28);
-            this.txt_Password.TabIndex = 3;
-            // 
             // txt_No
             // 
             this.txt_No.Location = new System.Drawing.Point(132, 64);
             this.txt_No.Name = "txt_No";
             this.txt_No.Size = new System.Drawing.Size(212, 28);
-            this.txt_No.TabIndex = 4;
-            this.txt_No.TextChanged += new System.EventHandler(this.txt_No_TextChanged);
+            this.txt_No.TabIndex = 3;
+            // 
+            // txt_Password
+            // 
+            this.txt_Password.Location = new System.Drawing.Point(132, 115);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '*';
+            this.txt_Password.Size = new System.Drawing.Size(212, 28);
+            this.txt_Password.TabIndex = 4;
+            this.txt_Password.TextChanged += new System.EventHandler(this.txt_No_TextChanged);
             // 
             // frm_LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 274);
-            this.Controls.Add(this.txt_No);
             this.Controls.Add(this.txt_Password);
+            this.Controls.Add(this.txt_No);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_LogIn);
@@ -102,8 +102,8 @@
         private System.Windows.Forms.Button btn_LogIn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.TextBox txt_No;
+        private System.Windows.Forms.TextBox txt_Password;
     }
 }
 

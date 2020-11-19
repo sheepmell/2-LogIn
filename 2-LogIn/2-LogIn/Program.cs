@@ -18,6 +18,8 @@ namespace _2_LogIn
             Application.SetCompatibleTextRenderingDefault(false);
             frm_LogIn frm_LogIn = new frm_LogIn();
             frm_LogIn.Show();
+            //frm_Homepage frm_Homepage = new frm_Homepage();
+            //frm_Homepage.Show();
             Application.Run();
         }
     }

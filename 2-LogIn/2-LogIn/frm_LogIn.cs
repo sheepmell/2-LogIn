@@ -16,15 +16,20 @@ namespace _2_LogIn
         public frm_LogIn()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormClosed += Frm_LogIn_FormClosed;
+        }
+
+        private void Frm_LogIn_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
         }
 
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
-            if (this.txt_No.Text == "")
-            {
-                MessageBox.Show("账号不可为空！");
-                return;
-            }
             if (this.txt_Password.Text=="")
             {
                 MessageBox.Show("密码不可为空！");
@@ -50,8 +55,8 @@ namespace _2_LogIn
                 MessageBox.Show("登陆失败！");
             }
 
-            this.txt_No.Text = "";
             this.txt_Password.Text = "";
+            this.txt_No.Text = "";
         }
 
         private void frm_LogIn_Load(object sender, EventArgs e)

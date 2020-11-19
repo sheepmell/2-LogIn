@@ -17,7 +17,17 @@ namespace _2_LogIn
         public frm_ChangeInfo()
         {
             InitializeComponent();
+            this.FormClosed += Frm_ChangeInfo_FormClosed;
         }
+
+        private void Frm_ChangeInfo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
+        }
+
         public frm_ChangeInfo(string studentNo) : this()
         {
             this._StudentNo = studentNo;
