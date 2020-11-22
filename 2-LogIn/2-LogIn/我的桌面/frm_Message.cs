@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SmartLinli.DatabaseDevelopement;
 
 namespace _2_LogIn
 {
@@ -16,30 +15,20 @@ namespace _2_LogIn
         public frm_Message()
         {
             InitializeComponent();
-            this.FormClosed += Frm_Message_FormClosed;
-        }
-
-        private void Frm_Message_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (Application.OpenForms.Count == 0)
-            {
-                Application.Exit();
-            }
         }
 
         private void frm_Message_Load(object sender, EventArgs e)
         {
-            // TODO: 这行代码将数据加载到表“educationalSystemDataSet1.tb_Messege”中。您可以根据需要移动或删除它。
-            this.tb_MessegeTableAdapter.Fill(this.educationalSystemDataSet1.tb_Messege);
+            // TODO: 这行代码将数据加载到表“messageData.tb_Messege”中。您可以根据需要移动或删除它。
+            this.tb_MessegeTableAdapter.Fill(this.messageData.tb_Messege);
 
         }
 
-        private void gv_Notice_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string Noitce = gv_Notice.Rows[e.RowIndex].Cells["Detail"].Value.ToString();
-            MessageBox.Show(Noitce);
-            gv_Notice.Rows[e.RowIndex].Cells["Status"].Value = "已读";
+            string Message = gv_Message.Rows[e.RowIndex].Cells["Detail"].Value.ToString();
+            MessageBox.Show(Message);
+            gv_Message.Rows[e.RowIndex].Cells["Status"].Value = "已读";
         }
     }
-    
 }

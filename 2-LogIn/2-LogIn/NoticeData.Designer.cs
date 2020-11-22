@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace _2_LogIn.SQL {
+namespace _2_LogIn {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace _2_LogIn.SQL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("EducationalSystemDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("NoticeData")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class EducationalSystemDataSet : global::System.Data.DataSet {
+    public partial class NoticeData : global::System.Data.DataSet {
         
         private tb_NoticeDataTable tabletb_Notice;
         
@@ -30,7 +30,7 @@ namespace _2_LogIn.SQL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public EducationalSystemDataSet() {
+        public NoticeData() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace _2_LogIn.SQL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected EducationalSystemDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected NoticeData(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace _2_LogIn.SQL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            EducationalSystemDataSet cln = ((EducationalSystemDataSet)(base.Clone()));
+            NoticeData cln = ((NoticeData)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace _2_LogIn.SQL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "EducationalSystemDataSet";
+            this.DataSetName = "NoticeData";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/EducationalSystemDataSet.xsd";
+            this.Namespace = "http://tempuri.org/NoticeData.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabletb_Notice = new tb_NoticeDataTable();
@@ -225,7 +225,7 @@ namespace _2_LogIn.SQL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            EducationalSystemDataSet ds = new EducationalSystemDataSet();
+            NoticeData ds = new NoticeData();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -562,7 +562,7 @@ namespace _2_LogIn.SQL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                EducationalSystemDataSet ds = new EducationalSystemDataSet();
+                NoticeData ds = new NoticeData();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -833,7 +833,7 @@ namespace _2_LogIn.SQL {
         }
     }
 }
-namespace _2_LogIn.SQL.EducationalSystemDataSetTableAdapters {
+namespace _2_LogIn.NoticeDataTableAdapters {
     
     
     /// <summary>
@@ -1036,7 +1036,7 @@ SELECT No, Title, Detail, Category, Sender, SendTime, Status FROM tb_Notice WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(EducationalSystemDataSet.tb_NoticeDataTable dataTable) {
+        public virtual int Fill(NoticeData.tb_NoticeDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1049,9 +1049,9 @@ SELECT No, Title, Detail, Category, Sender, SendTime, Status FROM tb_Notice WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual EducationalSystemDataSet.tb_NoticeDataTable GetData() {
+        public virtual NoticeData.tb_NoticeDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            EducationalSystemDataSet.tb_NoticeDataTable dataTable = new EducationalSystemDataSet.tb_NoticeDataTable();
+            NoticeData.tb_NoticeDataTable dataTable = new NoticeData.tb_NoticeDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1059,14 +1059,14 @@ SELECT No, Title, Detail, Category, Sender, SendTime, Status FROM tb_Notice WHER
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(EducationalSystemDataSet.tb_NoticeDataTable dataTable) {
+        public virtual int Update(NoticeData.tb_NoticeDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(EducationalSystemDataSet dataSet) {
+        public virtual int Update(NoticeData dataSet) {
             return this.Adapter.Update(dataSet, "tb_Notice");
         }
         
@@ -1420,7 +1420,7 @@ SELECT No, Title, Detail, Category, Sender, SendTime, Status FROM tb_Notice WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(EducationalSystemDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(NoticeData dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tb_NoticeTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.tb_Notice.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1439,7 +1439,7 @@ SELECT No, Title, Detail, Category, Sender, SendTime, Status FROM tb_Notice WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(EducationalSystemDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(NoticeData dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tb_NoticeTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.tb_Notice.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1457,7 +1457,7 @@ SELECT No, Title, Detail, Category, Sender, SendTime, Status FROM tb_Notice WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(EducationalSystemDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(NoticeData dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tb_NoticeTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tb_Notice.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1499,7 +1499,7 @@ SELECT No, Title, Detail, Category, Sender, SendTime, Status FROM tb_Notice WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(EducationalSystemDataSet dataSet) {
+        public virtual int UpdateAll(NoticeData dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

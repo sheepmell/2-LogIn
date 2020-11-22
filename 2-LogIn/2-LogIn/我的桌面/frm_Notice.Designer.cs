@@ -30,19 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gv_Notice = new System.Windows.Forms.DataGridView();
-            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Detail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SendTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.noticeData = new _2_LogIn.NoticeData();
             this.tbNoticeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.educationalSystemDataSet = new _2_LogIn.EducationalSystemDataSet();
-            this.tb_NoticeTableAdapter = new _2_LogIn.EducationalSystemDataSetTableAdapters.tb_NoticeTableAdapter();
+            this.tb_NoticeTableAdapter = new _2_LogIn.NoticeDataTableAdapters.tb_NoticeTableAdapter();
+            this.noDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sendTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Notice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noticeData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbNoticeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.educationalSystemDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // gv_Notice
@@ -50,98 +51,90 @@
             this.gv_Notice.AutoGenerateColumns = false;
             this.gv_Notice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gv_Notice.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.No,
-            this.Title,
-            this.Detail,
-            this.Category,
-            this.Sender,
-            this.SendTime,
-            this.Status});
+            this.noDataGridViewTextBoxColumn,
+            this.titleDataGridViewTextBoxColumn,
+            this.detailDataGridViewTextBoxColumn,
+            this.categoryDataGridViewTextBoxColumn,
+            this.senderDataGridViewTextBoxColumn,
+            this.sendTimeDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn});
             this.gv_Notice.DataSource = this.tbNoticeBindingSource;
-            this.gv_Notice.Location = new System.Drawing.Point(12, 12);
+            this.gv_Notice.Location = new System.Drawing.Point(40, 29);
             this.gv_Notice.Name = "gv_Notice";
-            this.gv_Notice.ReadOnly = true;
             this.gv_Notice.RowTemplate.Height = 30;
-            this.gv_Notice.Size = new System.Drawing.Size(1189, 493);
-            this.gv_Notice.TabIndex = 7;
+            this.gv_Notice.Size = new System.Drawing.Size(1120, 467);
+            this.gv_Notice.TabIndex = 0;
             this.gv_Notice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_Notice_CellContentClick);
             // 
-            // No
+            // noticeData
             // 
-            this.No.DataPropertyName = "No";
-            this.No.HeaderText = "No";
-            this.No.Name = "No";
-            this.No.ReadOnly = true;
-            // 
-            // Title
-            // 
-            this.Title.DataPropertyName = "Title";
-            this.Title.HeaderText = "Title";
-            this.Title.Name = "Title";
-            this.Title.ReadOnly = true;
-            // 
-            // Detail
-            // 
-            this.Detail.DataPropertyName = "Detail";
-            this.Detail.HeaderText = "Detail";
-            this.Detail.Name = "Detail";
-            this.Detail.ReadOnly = true;
-            // 
-            // Category
-            // 
-            this.Category.DataPropertyName = "Category";
-            this.Category.HeaderText = "Category";
-            this.Category.Name = "Category";
-            this.Category.ReadOnly = true;
-            // 
-            // Sender
-            // 
-            this.Sender.DataPropertyName = "Sender";
-            this.Sender.HeaderText = "Sender";
-            this.Sender.Name = "Sender";
-            this.Sender.ReadOnly = true;
-            // 
-            // SendTime
-            // 
-            this.SendTime.DataPropertyName = "SendTime";
-            this.SendTime.HeaderText = "SendTime";
-            this.SendTime.Name = "SendTime";
-            this.SendTime.ReadOnly = true;
-            // 
-            // Status
-            // 
-            this.Status.DataPropertyName = "Status";
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
+            this.noticeData.DataSetName = "NoticeData";
+            this.noticeData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbNoticeBindingSource
             // 
             this.tbNoticeBindingSource.DataMember = "tb_Notice";
-            this.tbNoticeBindingSource.DataSource = this.educationalSystemDataSet;
-            // 
-            // educationalSystemDataSet
-            // 
-            this.educationalSystemDataSet.DataSetName = "EducationalSystemDataSet";
-            this.educationalSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.tbNoticeBindingSource.DataSource = this.noticeData;
             // 
             // tb_NoticeTableAdapter
             // 
             this.tb_NoticeTableAdapter.ClearBeforeFill = true;
             // 
+            // noDataGridViewTextBoxColumn
+            // 
+            this.noDataGridViewTextBoxColumn.DataPropertyName = "No";
+            this.noDataGridViewTextBoxColumn.HeaderText = "No";
+            this.noDataGridViewTextBoxColumn.Name = "noDataGridViewTextBoxColumn";
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
+            this.titleDataGridViewTextBoxColumn.HeaderText = "Title";
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            // 
+            // detailDataGridViewTextBoxColumn
+            // 
+            this.detailDataGridViewTextBoxColumn.DataPropertyName = "Detail";
+            this.detailDataGridViewTextBoxColumn.HeaderText = "Detail";
+            this.detailDataGridViewTextBoxColumn.Name = "detailDataGridViewTextBoxColumn";
+            // 
+            // categoryDataGridViewTextBoxColumn
+            // 
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            // 
+            // senderDataGridViewTextBoxColumn
+            // 
+            this.senderDataGridViewTextBoxColumn.DataPropertyName = "Sender";
+            this.senderDataGridViewTextBoxColumn.HeaderText = "Sender";
+            this.senderDataGridViewTextBoxColumn.Name = "senderDataGridViewTextBoxColumn";
+            // 
+            // sendTimeDataGridViewTextBoxColumn
+            // 
+            this.sendTimeDataGridViewTextBoxColumn.DataPropertyName = "SendTime";
+            this.sendTimeDataGridViewTextBoxColumn.HeaderText = "SendTime";
+            this.sendTimeDataGridViewTextBoxColumn.Name = "sendTimeDataGridViewTextBoxColumn";
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            // 
             // frm_Notice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 579);
+            this.ClientSize = new System.Drawing.Size(1191, 523);
             this.Controls.Add(this.gv_Notice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_Notice";
             this.Text = "frm_Notice";
             this.Load += new System.EventHandler(this.frm_Notice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gv_Notice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noticeData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbNoticeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.educationalSystemDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -149,15 +142,16 @@
         #endregion
 
         private System.Windows.Forms.DataGridView gv_Notice;
-        private EducationalSystemDataSet educationalSystemDataSet;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private NoticeData noticeData;
         private System.Windows.Forms.BindingSource tbNoticeBindingSource;
-        private EducationalSystemDataSetTableAdapters.tb_NoticeTableAdapter tb_NoticeTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn No;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Title;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Detail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SendTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private NoticeDataTableAdapters.tb_NoticeTableAdapter tb_NoticeTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn detailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn senderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sendTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
     }
 }

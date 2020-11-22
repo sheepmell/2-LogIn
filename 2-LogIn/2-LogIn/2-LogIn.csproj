@@ -41,7 +41,7 @@
       <HintPath>..\packages\Npgsql.4.1.0\lib\net461\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="SmartLinli.DatabaseDevelopement.DbHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SmartLinli.DatabaseDevelopement.DbHelper.0.0.46-alpha\lib\net472\SmartLinli.DatabaseDevelopement.DbHelper.dll</HintPath>
+      <HintPath>..\packages\SmartLinli.DatabaseDevelopement.DbHelper.0.0.48-alpha\lib\net472\SmartLinli.DatabaseDevelopement.DbHelper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -82,6 +82,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="我的桌面\frm_Notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的桌面\frm_Notice.Designer.cs">
+      <DependentUpon>frm_Notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoticeData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NoticeData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="我的桌面\frm_Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的桌面\frm_Message.Designer.cs">
+      <DependentUpon>frm_Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageData.xsd</DependentUpon>
+    </Compile>
     <Compile Include="学籍成绩\frm_ApplyExchangeStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,21 +146,6 @@
     <Compile Include="学籍成绩\frm_StatusInfo.Designer.cs">
       <DependentUpon>frm_StatusInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="SQL\EducationalSystem.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EducationalSystem.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="SQL\EducationalSystemDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EducationalSystemDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SQL\EducationalSystemDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EducationalSystemDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="学籍成绩\frm_StudentStatusCard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,18 +171,6 @@
     <Compile Include="frm_LogIn.Designer.cs">
       <DependentUpon>frm_LogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="我的桌面\frm_Message.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="我的桌面\frm_Message.Designer.cs">
-      <DependentUpon>frm_Message.cs</DependentUpon>
-    </Compile>
-    <Compile Include="我的桌面\frm_Notice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="我的桌面\frm_Notice.Designer.cs">
-      <DependentUpon>frm_Notice.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_StudentInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +185,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="我的桌面\frm_Notice.resx">
+      <DependentUpon>frm_Notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="我的桌面\frm_Message.resx">
+      <DependentUpon>frm_Message.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="学籍成绩\frm_ApplyExchangeStudent.resx">
       <DependentUpon>frm_ApplyExchangeStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,12 +224,6 @@
     <EmbeddedResource Include="frm_LogIn.resx">
       <DependentUpon>frm_LogIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="我的桌面\frm_Message.resx">
-      <DependentUpon>frm_Message.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="我的桌面\frm_Notice.resx">
-      <DependentUpon>frm_Notice.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_StudentInfo.resx">
       <DependentUpon>frm_StudentInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,35 +240,27 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="SQL\EducationalSystem.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>EducationalSystem.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
+    <None Include="MessageData.xsc">
+      <DependentUpon>MessageData.xsd</DependentUpon>
     </None>
-    <None Include="SQL\EducationalSystem.dbml.layout">
-      <DependentUpon>EducationalSystem.dbml</DependentUpon>
-    </None>
-    <None Include="SQL\EducationalSystemDataSet.xsc">
-      <DependentUpon>EducationalSystemDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SQL\EducationalSystemDataSet.xsd">
+    <None Include="MessageData.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EducationalSystemDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>MessageData.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="SQL\EducationalSystemDataSet.xss">
-      <DependentUpon>EducationalSystemDataSet.xsd</DependentUpon>
+    <None Include="MessageData.xss">
+      <DependentUpon>MessageData.xsd</DependentUpon>
     </None>
-    <None Include="SQL\EducationalSystemDataSet1.xsc">
-      <DependentUpon>EducationalSystemDataSet1.xsd</DependentUpon>
+    <None Include="NoticeData.xsc">
+      <DependentUpon>NoticeData.xsd</DependentUpon>
     </None>
-    <None Include="SQL\EducationalSystemDataSet1.xsd">
+    <None Include="NoticeData.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EducationalSystemDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>NoticeData.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="SQL\EducationalSystemDataSet1.xss">
-      <DependentUpon>EducationalSystemDataSet1.xsd</DependentUpon>
+    <None Include="NoticeData.xss">
+      <DependentUpon>NoticeData.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
