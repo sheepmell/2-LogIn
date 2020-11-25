@@ -46,8 +46,8 @@ namespace _2_LogIn
             if (result==1)
             {
                 MessageBox.Show("登陆成功！");
-                frm_StudentInfo frm_StudentInfo = new frm_StudentInfo(this.txt_No.Text);
-                frm_StudentInfo.Show();
+                frm_Homepage frm_Homepage = new frm_Homepage(txt_No.Text);
+                frm_Homepage.Show();
                 this.Close();
             }
             else

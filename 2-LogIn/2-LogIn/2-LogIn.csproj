@@ -82,16 +82,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="我的桌面\frm_Notice.cs">
+    <Compile Include="我的成绩\frm_CourseScore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="我的桌面\frm_Notice.Designer.cs">
-      <DependentUpon>frm_Notice.cs</DependentUpon>
+    <Compile Include="我的成绩\frm_CourseScore.Designer.cs">
+      <DependentUpon>frm_CourseScore.cs</DependentUpon>
     </Compile>
-    <Compile Include="NoticeData.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NoticeData.xsd</DependentUpon>
+    <Compile Include="我的成绩\frm_GradeExamination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的成绩\frm_GradeExamination.Designer.cs">
+      <DependentUpon>frm_GradeExamination.cs</DependentUpon>
     </Compile>
     <Compile Include="我的桌面\frm_Message.cs">
       <SubType>Form</SubType>
@@ -99,57 +100,68 @@
     <Compile Include="我的桌面\frm_Message.Designer.cs">
       <DependentUpon>frm_Message.cs</DependentUpon>
     </Compile>
-    <Compile Include="MessageData.Designer.cs">
+    <Compile Include="我的桌面\frm_Notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的桌面\frm_Notice.Designer.cs">
+      <DependentUpon>frm_Notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageData1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MessageData.xsd</DependentUpon>
+      <DependentUpon>MessageData1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="学籍成绩\frm_ApplyExchangeStudent.cs">
+    <Compile Include="NoticeData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NoticeData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="学籍管理\frm_ApplyExchangeStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="学籍成绩\frm_ApplyExchangeStudent.Designer.cs">
+    <Compile Include="学籍管理\frm_ApplyExchangeStudent.Designer.cs">
       <DependentUpon>frm_ApplyExchangeStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="学籍成绩\frm_ProfessionalDiversion.cs">
+    <Compile Include="学籍管理\frm_ProfessionalDiversion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="学籍成绩\frm_ProfessionalDiversion.Designer.cs">
+    <Compile Include="学籍管理\frm_ProfessionalDiversion.Designer.cs">
       <DependentUpon>frm_ProfessionalDiversion.cs</DependentUpon>
     </Compile>
-    <Compile Include="学籍成绩\frm_ResultsExchangeStudents.cs">
+    <Compile Include="学籍管理\frm_ResultsExchangeStudents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="学籍成绩\frm_ResultsExchangeStudents.Designer.cs">
+    <Compile Include="学籍管理\frm_ResultsExchangeStudents.Designer.cs">
       <DependentUpon>frm_ResultsExchangeStudents.cs</DependentUpon>
     </Compile>
-    <Compile Include="学籍成绩\frm_SelectionExchangeStudents.cs">
+    <Compile Include="学籍管理\frm_SelectionExchangeStudents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="学籍成绩\frm_SelectionExchangeStudents.Designer.cs">
+    <Compile Include="学籍管理\frm_SelectionExchangeStudents.Designer.cs">
       <DependentUpon>frm_SelectionExchangeStudents.cs</DependentUpon>
     </Compile>
-    <Compile Include="学籍成绩\frm_StatusAlarm.cs">
+    <Compile Include="学籍管理\frm_StatusAlarm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="学籍成绩\frm_StatusAlarm.Designer.cs">
+    <Compile Include="学籍管理\frm_StatusAlarm.Designer.cs">
       <DependentUpon>frm_StatusAlarm.cs</DependentUpon>
     </Compile>
-    <Compile Include="学籍成绩\frm_StatusError.cs">
+    <Compile Include="学籍管理\frm_StatusError.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="学籍成绩\frm_StatusError.Designer.cs">
+    <Compile Include="学籍管理\frm_StatusError.Designer.cs">
       <DependentUpon>frm_StatusError.cs</DependentUpon>
     </Compile>
-    <Compile Include="学籍成绩\frm_StatusInfo.cs">
+    <Compile Include="学籍管理\frm_StatusInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="学籍成绩\frm_StatusInfo.Designer.cs">
+    <Compile Include="学籍管理\frm_StatusInfo.Designer.cs">
       <DependentUpon>frm_StatusInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="学籍成绩\frm_StudentStatusCard.cs">
+    <Compile Include="学籍管理\frm_StudentStatusCard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="学籍成绩\frm_StudentStatusCard.Designer.cs">
+    <Compile Include="学籍管理\frm_StudentStatusCard.Designer.cs">
       <DependentUpon>frm_StudentStatusCard.cs</DependentUpon>
     </Compile>
     <Compile Include="System\Windows\SystemParameters.cs" />
@@ -171,12 +183,6 @@
     <Compile Include="frm_LogIn.Designer.cs">
       <DependentUpon>frm_LogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_StudentInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_StudentInfo.Designer.cs">
-      <DependentUpon>frm_StudentInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,34 +191,40 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="我的桌面\frm_Notice.resx">
-      <DependentUpon>frm_Notice.cs</DependentUpon>
+    <EmbeddedResource Include="我的成绩\frm_CourseScore.resx">
+      <DependentUpon>frm_CourseScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="我的成绩\frm_GradeExamination.resx">
+      <DependentUpon>frm_GradeExamination.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="我的桌面\frm_Message.resx">
       <DependentUpon>frm_Message.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="学籍成绩\frm_ApplyExchangeStudent.resx">
+    <EmbeddedResource Include="我的桌面\frm_Notice.resx">
+      <DependentUpon>frm_Notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学籍管理\frm_ApplyExchangeStudent.resx">
       <DependentUpon>frm_ApplyExchangeStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="学籍成绩\frm_ProfessionalDiversion.resx">
+    <EmbeddedResource Include="学籍管理\frm_ProfessionalDiversion.resx">
       <DependentUpon>frm_ProfessionalDiversion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="学籍成绩\frm_ResultsExchangeStudents.resx">
+    <EmbeddedResource Include="学籍管理\frm_ResultsExchangeStudents.resx">
       <DependentUpon>frm_ResultsExchangeStudents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="学籍成绩\frm_SelectionExchangeStudents.resx">
+    <EmbeddedResource Include="学籍管理\frm_SelectionExchangeStudents.resx">
       <DependentUpon>frm_SelectionExchangeStudents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="学籍成绩\frm_StatusAlarm.resx">
+    <EmbeddedResource Include="学籍管理\frm_StatusAlarm.resx">
       <DependentUpon>frm_StatusAlarm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="学籍成绩\frm_StatusError.resx">
+    <EmbeddedResource Include="学籍管理\frm_StatusError.resx">
       <DependentUpon>frm_StatusError.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="学籍成绩\frm_StatusInfo.resx">
+    <EmbeddedResource Include="学籍管理\frm_StatusInfo.resx">
       <DependentUpon>frm_StatusInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="学籍成绩\frm_StudentStatusCard.resx">
+    <EmbeddedResource Include="学籍管理\frm_StudentStatusCard.resx">
       <DependentUpon>frm_StudentStatusCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="我的桌面\frm_ChangeInfo.resx">
@@ -223,9 +235,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LogIn.resx">
       <DependentUpon>frm_LogIn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_StudentInfo.resx">
-      <DependentUpon>frm_StudentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Homepage.resx">
       <DependentUpon>frm_Homepage.cs</DependentUpon>
@@ -240,16 +249,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="MessageData.xsc">
-      <DependentUpon>MessageData.xsd</DependentUpon>
+    <None Include="MessageData1.xsc">
+      <DependentUpon>MessageData1.xsd</DependentUpon>
     </None>
-    <None Include="MessageData.xsd">
+    <None Include="MessageData1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MessageData.Designer.cs</LastGenOutput>
+      <LastGenOutput>MessageData1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MessageData.xss">
-      <DependentUpon>MessageData.xsd</DependentUpon>
+    <None Include="MessageData1.xss">
+      <DependentUpon>MessageData1.xsd</DependentUpon>
     </None>
     <None Include="NoticeData.xsc">
       <DependentUpon>NoticeData.xsd</DependentUpon>

@@ -143,5 +143,23 @@ namespace _2_LogIn
             this.panel_StudentStatus.Controls.Add(frm_SelectionExchangeStudents);
             frm_SelectionExchangeStudents.Show();
         }
+        //课程成绩查询
+        private void lkl_CourseScore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_CourseScore frm_CourseScore = new frm_CourseScore(_StudentNo);
+            frm_CourseScore.TopLevel = false;
+            this.panel_StudentStatus.Controls.Clear();
+            this.panel_StudentStatus.Controls.Add(frm_CourseScore);
+            frm_CourseScore.Show();
+        }
+        //等级考试查询
+        private void lkl_GradeExamination_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_GradeExamination frm_GradeExamination = new frm_GradeExamination(_StudentNo);
+            frm_GradeExamination.TopLevel = false;
+            this.panel_StudentStatus.Controls.Clear();
+            this.panel_StudentStatus.Controls.Add(frm_GradeExamination);
+            frm_GradeExamination.Show();
+        }
     }
 }

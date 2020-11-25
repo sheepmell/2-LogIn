@@ -26,8 +26,8 @@ namespace _2_LogIn
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string Message = gv_Message.Rows[e.RowIndex].Cells["Detail"].Value.ToString();
-            MessageBox.Show(Message);
+            var Detail = gv_Message.Rows[e.RowIndex].Cells["Detail"].Value.ToString();
+            MessageBox.Show($"{Detail}");
             gv_Message.Rows[e.RowIndex].Cells["Status"].Value = "已读";
         }
     }

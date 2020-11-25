@@ -30,17 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gv_Notice = new System.Windows.Forms.DataGridView();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.noticeData = new _2_LogIn.NoticeData();
             this.tbNoticeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_NoticeTableAdapter = new _2_LogIn.NoticeDataTableAdapters.tb_NoticeTableAdapter();
-            this.noDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.detailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.senderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sendTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SendTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Notice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noticeData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbNoticeBindingSource)).BeginInit();
@@ -51,15 +50,15 @@
             this.gv_Notice.AutoGenerateColumns = false;
             this.gv_Notice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gv_Notice.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.noDataGridViewTextBoxColumn,
-            this.titleDataGridViewTextBoxColumn,
-            this.detailDataGridViewTextBoxColumn,
-            this.categoryDataGridViewTextBoxColumn,
-            this.senderDataGridViewTextBoxColumn,
-            this.sendTimeDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn});
+            this.No,
+            this.Title,
+            this.Detail,
+            this.Category,
+            this.Sender,
+            this.SendTime,
+            this.Status});
             this.gv_Notice.DataSource = this.tbNoticeBindingSource;
-            this.gv_Notice.Location = new System.Drawing.Point(40, 29);
+            this.gv_Notice.Location = new System.Drawing.Point(34, 25);
             this.gv_Notice.Name = "gv_Notice";
             this.gv_Notice.RowTemplate.Height = 30;
             this.gv_Notice.Size = new System.Drawing.Size(1120, 467);
@@ -80,47 +79,47 @@
             // 
             this.tb_NoticeTableAdapter.ClearBeforeFill = true;
             // 
-            // noDataGridViewTextBoxColumn
+            // No
             // 
-            this.noDataGridViewTextBoxColumn.DataPropertyName = "No";
-            this.noDataGridViewTextBoxColumn.HeaderText = "No";
-            this.noDataGridViewTextBoxColumn.Name = "noDataGridViewTextBoxColumn";
+            this.No.DataPropertyName = "No";
+            this.No.HeaderText = "No";
+            this.No.Name = "No";
             // 
-            // titleDataGridViewTextBoxColumn
+            // Title
             // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
-            this.titleDataGridViewTextBoxColumn.HeaderText = "Title";
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.Title.DataPropertyName = "Title";
+            this.Title.HeaderText = "Title";
+            this.Title.Name = "Title";
             // 
-            // detailDataGridViewTextBoxColumn
+            // Detail
             // 
-            this.detailDataGridViewTextBoxColumn.DataPropertyName = "Detail";
-            this.detailDataGridViewTextBoxColumn.HeaderText = "Detail";
-            this.detailDataGridViewTextBoxColumn.Name = "detailDataGridViewTextBoxColumn";
+            this.Detail.DataPropertyName = "Detail";
+            this.Detail.HeaderText = "Detail";
+            this.Detail.Name = "Detail";
             // 
-            // categoryDataGridViewTextBoxColumn
+            // Category
             // 
-            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
-            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            this.Category.DataPropertyName = "Category";
+            this.Category.HeaderText = "Category";
+            this.Category.Name = "Category";
             // 
-            // senderDataGridViewTextBoxColumn
+            // Sender
             // 
-            this.senderDataGridViewTextBoxColumn.DataPropertyName = "Sender";
-            this.senderDataGridViewTextBoxColumn.HeaderText = "Sender";
-            this.senderDataGridViewTextBoxColumn.Name = "senderDataGridViewTextBoxColumn";
+            this.Sender.DataPropertyName = "Sender";
+            this.Sender.HeaderText = "Sender";
+            this.Sender.Name = "Sender";
             // 
-            // sendTimeDataGridViewTextBoxColumn
+            // SendTime
             // 
-            this.sendTimeDataGridViewTextBoxColumn.DataPropertyName = "SendTime";
-            this.sendTimeDataGridViewTextBoxColumn.HeaderText = "SendTime";
-            this.sendTimeDataGridViewTextBoxColumn.Name = "sendTimeDataGridViewTextBoxColumn";
+            this.SendTime.DataPropertyName = "SendTime";
+            this.SendTime.HeaderText = "SendTime";
+            this.SendTime.Name = "SendTime";
             // 
-            // statusDataGridViewTextBoxColumn
+            // Status
             // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
             // 
             // frm_Notice
             // 
@@ -142,16 +141,15 @@
         #endregion
 
         private System.Windows.Forms.DataGridView gv_Notice;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private NoticeData noticeData;
         private System.Windows.Forms.BindingSource tbNoticeBindingSource;
         private NoticeDataTableAdapters.tb_NoticeTableAdapter tb_NoticeTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn noDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn detailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn senderDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sendTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn No;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Detail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SendTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
     }
 }

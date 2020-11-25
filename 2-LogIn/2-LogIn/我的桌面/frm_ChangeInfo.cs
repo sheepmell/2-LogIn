@@ -61,10 +61,11 @@ namespace _2_LogIn
             string commandText = $@"Update tb_StudentPersonal SET Name='{txt_Name.Text}',
                                     Question1='{txt_Question1.Text}',Answer1='{txt_Answer1.Text}',
                                     Question2='{txt_Question2.Text}',Answer2='{txt_Answer2.Text}' 
-                                    Where No='{txt_No}';";
+                                    Where No='{txt_No.Text}';";
             SqlHelper sqlHelper = new SqlHelper();
-            int result = sqlHelper.QuickReturn<int>(commandText);
-            if (result == 0)
+            int result = sqlHelper.QuickSubmit(commandText);
+
+            if (result == 1)
             {
                 MessageBox.Show("更改成功！");
             }

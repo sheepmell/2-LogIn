@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace _2_LogIn
 {
-    public partial class frm_SelectionExchangeStudents : Form
+    public partial class frm_CourseScore : Form
     {
-        public frm_SelectionExchangeStudents()
+        private string _StudentNo;
+        public frm_CourseScore()
         {
             InitializeComponent();
+        }
+
+        public frm_CourseScore(string studentNo) : this()
+        {
+            this._StudentNo = studentNo;
         }
     }
 }

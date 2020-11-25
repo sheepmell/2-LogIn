@@ -10,14 +10,15 @@ using System.Windows.Forms;
 
 namespace _2_LogIn
 {
-    public partial class frm_StudentStatusCard : Form
+    public partial class frm_GradeExamination : Form
     {
         private string _StudentNo;
-        public frm_StudentStatusCard()
+        public frm_GradeExamination()
         {
             InitializeComponent();
         }
-        public frm_StudentStatusCard(string studentNo) : this()
+
+        public frm_GradeExamination(string studentNo) : this()
         {
             this._StudentNo = studentNo;
         }

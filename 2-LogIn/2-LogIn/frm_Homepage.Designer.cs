@@ -41,6 +41,9 @@
             this.lkl_Notice = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.tbp_StudentStatus = new System.Windows.Forms.TabPage();
+            this.lkl_StatusError = new System.Windows.Forms.LinkLabel();
+            this.lkl_StatusAlarm = new System.Windows.Forms.LinkLabel();
+            this.lkl_StatusInfo = new System.Windows.Forms.LinkLabel();
             this.lkl_CourseScore = new System.Windows.Forms.LinkLabel();
             this.panel_StudentStatus = new System.Windows.Forms.Panel();
             this.lkl_GradeExamination = new System.Windows.Forms.LinkLabel();
@@ -111,9 +114,6 @@
             this.lkl_StudentEvaluation = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel_TeachingEvaluation = new System.Windows.Forms.Panel();
-            this.lkl_StatusInfo = new System.Windows.Forms.LinkLabel();
-            this.lkl_StatusAlarm = new System.Windows.Forms.LinkLabel();
-            this.lkl_StatusError = new System.Windows.Forms.LinkLabel();
             this.tbc_Home.SuspendLayout();
             this.tbp_Home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -270,6 +270,39 @@
             this.tbp_StudentStatus.Text = "学籍成绩";
             this.tbp_StudentStatus.UseVisualStyleBackColor = true;
             // 
+            // lkl_StatusError
+            // 
+            this.lkl_StatusError.AutoSize = true;
+            this.lkl_StatusError.Location = new System.Drawing.Point(28, 248);
+            this.lkl_StatusError.Name = "lkl_StatusError";
+            this.lkl_StatusError.Size = new System.Drawing.Size(116, 18);
+            this.lkl_StatusError.TabIndex = 48;
+            this.lkl_StatusError.TabStop = true;
+            this.lkl_StatusError.Text = "学籍异动管理";
+            this.lkl_StatusError.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_StatusError_LinkClicked);
+            // 
+            // lkl_StatusAlarm
+            // 
+            this.lkl_StatusAlarm.AutoSize = true;
+            this.lkl_StatusAlarm.Location = new System.Drawing.Point(28, 190);
+            this.lkl_StatusAlarm.Name = "lkl_StatusAlarm";
+            this.lkl_StatusAlarm.Size = new System.Drawing.Size(116, 18);
+            this.lkl_StatusAlarm.TabIndex = 47;
+            this.lkl_StatusAlarm.TabStop = true;
+            this.lkl_StatusAlarm.Text = "学籍预警管理";
+            this.lkl_StatusAlarm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_StatusAlarm_LinkClicked);
+            // 
+            // lkl_StatusInfo
+            // 
+            this.lkl_StatusInfo.AutoSize = true;
+            this.lkl_StatusInfo.Location = new System.Drawing.Point(28, 132);
+            this.lkl_StatusInfo.Name = "lkl_StatusInfo";
+            this.lkl_StatusInfo.Size = new System.Drawing.Size(116, 18);
+            this.lkl_StatusInfo.TabIndex = 46;
+            this.lkl_StatusInfo.TabStop = true;
+            this.lkl_StatusInfo.Text = "学籍信息管理";
+            this.lkl_StatusInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_StatusInfo_LinkClicked);
+            // 
             // lkl_CourseScore
             // 
             this.lkl_CourseScore.AutoSize = true;
@@ -279,6 +312,7 @@
             this.lkl_CourseScore.TabIndex = 45;
             this.lkl_CourseScore.TabStop = true;
             this.lkl_CourseScore.Text = "课程成绩查询";
+            this.lkl_CourseScore.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_CourseScore_LinkClicked);
             // 
             // panel_StudentStatus
             // 
@@ -296,6 +330,7 @@
             this.lkl_GradeExamination.TabIndex = 44;
             this.lkl_GradeExamination.TabStop = true;
             this.lkl_GradeExamination.Text = "等级考试查询";
+            this.lkl_GradeExamination.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_GradeExamination_LinkClicked);
             // 
             // lbl_NoticeMessage
             // 
@@ -999,39 +1034,6 @@
             this.panel_TeachingEvaluation.Name = "panel_TeachingEvaluation";
             this.panel_TeachingEvaluation.Size = new System.Drawing.Size(1615, 752);
             this.panel_TeachingEvaluation.TabIndex = 14;
-            // 
-            // lkl_StatusInfo
-            // 
-            this.lkl_StatusInfo.AutoSize = true;
-            this.lkl_StatusInfo.Location = new System.Drawing.Point(28, 132);
-            this.lkl_StatusInfo.Name = "lkl_StatusInfo";
-            this.lkl_StatusInfo.Size = new System.Drawing.Size(116, 18);
-            this.lkl_StatusInfo.TabIndex = 46;
-            this.lkl_StatusInfo.TabStop = true;
-            this.lkl_StatusInfo.Text = "学籍信息管理";
-            this.lkl_StatusInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_StatusInfo_LinkClicked);
-            // 
-            // lkl_StatusAlarm
-            // 
-            this.lkl_StatusAlarm.AutoSize = true;
-            this.lkl_StatusAlarm.Location = new System.Drawing.Point(28, 190);
-            this.lkl_StatusAlarm.Name = "lkl_StatusAlarm";
-            this.lkl_StatusAlarm.Size = new System.Drawing.Size(116, 18);
-            this.lkl_StatusAlarm.TabIndex = 47;
-            this.lkl_StatusAlarm.TabStop = true;
-            this.lkl_StatusAlarm.Text = "学籍预警管理";
-            this.lkl_StatusAlarm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_StatusAlarm_LinkClicked);
-            // 
-            // lkl_StatusError
-            // 
-            this.lkl_StatusError.AutoSize = true;
-            this.lkl_StatusError.Location = new System.Drawing.Point(28, 248);
-            this.lkl_StatusError.Name = "lkl_StatusError";
-            this.lkl_StatusError.Size = new System.Drawing.Size(116, 18);
-            this.lkl_StatusError.TabIndex = 48;
-            this.lkl_StatusError.TabStop = true;
-            this.lkl_StatusError.Text = "学籍异动管理";
-            this.lkl_StatusError.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_StatusError_LinkClicked);
             // 
             // frm_Homepage
             // 
