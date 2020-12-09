@@ -82,6 +82,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_SocialExaminationRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SocialExaminationRegistration.Designer.cs">
+      <DependentUpon>frm_SocialExaminationRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="选课管理\frm_ClassroomBorrowingApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="选课管理\frm_ClassroomBorrowingApplication.Designer.cs">
+      <DependentUpon>frm_ClassroomBorrowingApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="选课管理\frm_StudentCoursSelectionCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="选课管理\frm_StudentCoursSelectionCenter.Designer.cs">
+      <DependentUpon>frm_StudentCoursSelectionCenter.cs</DependentUpon>
+    </Compile>
     <Compile Include="我的成绩\frm_CourseScore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +209,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_SocialExaminationRegistration.resx">
+      <DependentUpon>frm_SocialExaminationRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="选课管理\frm_ClassroomBorrowingApplication.resx">
+      <DependentUpon>frm_ClassroomBorrowingApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="选课管理\frm_StudentCoursSelectionCenter.resx">
+      <DependentUpon>frm_StudentCoursSelectionCenter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="我的成绩\frm_CourseScore.resx">
       <DependentUpon>frm_CourseScore.cs</DependentUpon>
     </EmbeddedResource>

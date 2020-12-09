@@ -7,28 +7,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SmartLinli.DatabaseDevelopement;
 
 namespace _2_LogIn
 {
     public partial class frm_Message : Form
     {
+        private string _StudentNo;
         public frm_Message()
         {
             InitializeComponent();
+            this.LoadMessage();
         }
-
-        private void frm_Message_Load(object sender, EventArgs e)
+        public frm_Message(string studentno):this()
         {
-            // TODO: 这行代码将数据加载到表“messageData.tb_Messege”中。您可以根据需要移动或删除它。
-            this.tb_MessegeTableAdapter.Fill(this.messageData.tb_Messege);
-
+            this._StudentNo = studentno;
+        }
+        private void LoadMessage()
+        {
+            SqlHelper sqlHelper = new SqlHelper();
+            string commantText =
+                $@"SELECT M.*,'已读' AS Status 
+                     FROM dbo.tb_Messege AS M 
+		                  JOIN dbo.tb_StuMessage AS SM ON M.No = SM.MessageNo
+		             WHERE SM.StudentNo='3190707001'
+	                 UNION
+	                 SELECT M.* ,'未读'
+	                 FROM dbo.tb_Messege AS M
+	                 WHERE M.No NOT IN
+	                 (SELECT SM.MessageNo
+				      FROM dbo.tb_StuMessage AS SM
+				    	WHERE SM.StudentNo='3190707001');";
+            sqlHelper.QuickFill(commantText, gv_Message);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var Detail = gv_Message.Rows[e.RowIndex].Cells["Detail"].Value.ToString();
             MessageBox.Show($"{Detail}");
-            gv_Message.Rows[e.RowIndex].Cells["Status"].Value = "已读";
+            var status = gv_Message.Rows[e.RowIndex].Cells["Status"].Value.ToString();
+            if (status=="未读")
+            {
+                SqlHelper sqlHelper = new SqlHelper();
+                var messageNo = gv_Message.Rows[e.RowIndex].Cells["No"].Value.ToString();
+                sqlHelper.QuickSubmit($"INSERT tb_StuMessage(StudentNo,MessageNo) VALUES('{_StudentNo}','{messageNo}');");
+            }
+            this.LoadMessage();
+
         }
     }
 }

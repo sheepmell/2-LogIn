@@ -567,6 +567,7 @@
             this.lkl_ClassroomBorrowingApplication.TabIndex = 76;
             this.lkl_ClassroomBorrowingApplication.TabStop = true;
             this.lkl_ClassroomBorrowingApplication.Text = "教室借用申请";
+            this.lkl_ClassroomBorrowingApplication.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_ClassroomBorrowingApplication_LinkClicked);
             // 
             // lkl_StudentPreSelectionManagement
             // 
@@ -587,6 +588,7 @@
             this.lkl_StudentCoursSelectionCenter.TabIndex = 74;
             this.lkl_StudentCoursSelectionCenter.TabStop = true;
             this.lkl_StudentCoursSelectionCenter.Text = "学生选课中心";
+            this.lkl_StudentCoursSelectionCenter.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_StudentCoursSelectionCenter_LinkClicked);
             // 
             // lkl_QueryCourseSelection
             // 
@@ -739,6 +741,7 @@
             this.lkl_SocialExaminationRegistration.TabIndex = 49;
             this.lkl_SocialExaminationRegistration.TabStop = true;
             this.lkl_SocialExaminationRegistration.Text = "社会考试报名";
+            this.lkl_SocialExaminationRegistration.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_SocialExaminationRegistration_LinkClicked);
             // 
             // lkl_HalfTermExaminationQuery
             // 

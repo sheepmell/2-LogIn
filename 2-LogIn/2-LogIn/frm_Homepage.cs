@@ -33,7 +33,7 @@ namespace _2_LogIn
         //已收公告
         private void lkl_Notice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frm_Notice frm_Notice = new frm_Notice();
+            frm_Notice frm_Notice = new frm_Notice(this._StudentNo);
             frm_Notice.TopLevel = false;
             this.panel_Destop.Controls.Clear();
             this.panel_Destop.Controls.Add(frm_Notice);
@@ -42,7 +42,7 @@ namespace _2_LogIn
         //已收留言
         private void lkl_Message_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frm_Message frm_Message = new frm_Message();
+            frm_Message frm_Message = new frm_Message(this._StudentNo);
             frm_Message.TopLevel = false;
             this.panel_Destop.Controls.Clear();
             this.panel_Destop.Controls.Add(frm_Message);
@@ -137,7 +137,7 @@ namespace _2_LogIn
         //交换生选课
         private void lkl_SelectionExchangeStudents_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frm_SelectionExchangeStudents frm_SelectionExchangeStudents = new frm_SelectionExchangeStudents();
+            frm_SelectionExchangeStudents frm_SelectionExchangeStudents = new frm_SelectionExchangeStudents(this._StudentNo);
             frm_SelectionExchangeStudents.TopLevel = false;
             this.panel_StudentStatus.Controls.Clear();
             this.panel_StudentStatus.Controls.Add(frm_SelectionExchangeStudents);
@@ -160,6 +160,33 @@ namespace _2_LogIn
             this.panel_StudentStatus.Controls.Clear();
             this.panel_StudentStatus.Controls.Add(frm_GradeExamination);
             frm_GradeExamination.Show();
+        }
+        //学生选课中心
+        private void lkl_StudentCoursSelectionCenter_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_StudentCoursSelectionCenter frm_StudentCoursSelectionCenter = new frm_StudentCoursSelectionCenter(_StudentNo);
+            frm_StudentCoursSelectionCenter.TopLevel = false;
+            this.panel_TrainingManagement.Controls.Clear();
+            this.panel_TrainingManagement.Controls.Add(frm_StudentCoursSelectionCenter);
+            frm_StudentCoursSelectionCenter.Show();
+        }
+        //教室借用申请
+        private void lkl_ClassroomBorrowingApplication_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_ClassroomBorrowingApplication frm_ClassroomBorrowingApplication = new frm_ClassroomBorrowingApplication();
+            frm_ClassroomBorrowingApplication.TopLevel = false;
+            this.panel_TrainingManagement.Controls.Clear();
+            this.panel_TrainingManagement.Controls.Add(frm_ClassroomBorrowingApplication);
+            frm_ClassroomBorrowingApplication.Show();
+        }
+        //社会考试报名
+        private void lkl_SocialExaminationRegistration_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_SocialExaminationRegistration frm_SocialExaminationRegistration = new frm_SocialExaminationRegistration(this._StudentNo);
+            frm_SocialExaminationRegistration.TopLevel = false;
+            this.panel_ExaminationRegistration.Controls.Clear();
+            this.panel_ExaminationRegistration.Controls.Add(frm_SocialExaminationRegistration);
+            frm_SocialExaminationRegistration.Show();
         }
     }
 }

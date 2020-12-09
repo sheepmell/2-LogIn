@@ -20,6 +20,7 @@ namespace _2_LogIn
         {
             InitializeComponent();
             this.FormClosed += Frm_StudentStatusCard_FormClosed;
+            this.LoadClasses();
         }
 
         private void Frm_StudentStatusCard_FormClosed(object sender, FormClosedEventArgs e)
@@ -33,7 +34,6 @@ namespace _2_LogIn
         public frm_StudentStatusCard(string studentNo) : this()
         {
             this._StudentNo = studentNo;
-            this.LoadClasses();
         }
         //加载班级
         private void LoadClasses()

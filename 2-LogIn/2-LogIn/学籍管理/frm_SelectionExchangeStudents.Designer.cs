@@ -177,6 +177,7 @@
             this.btn_Query.TabIndex = 14;
             this.btn_Query.Text = "查询";
             this.btn_Query.UseVisualStyleBackColor = true;
+            this.btn_Query.Click += new System.EventHandler(this.btn_Query_Click);
             // 
             // frm_SelectionExchangeStudents
             // 
