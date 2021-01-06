@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.gv_Apply = new System.Windows.Forms.DataGridView();
-            this.Opeartion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.终审状态 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.当前状态 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.学籍状态 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.允许调配 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.专业 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.学校 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.交换学期 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.学生 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.交换学期 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.学校 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.专业 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.允许调配 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.学籍状态 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.当前状态 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.终审状态 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Opeartion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Apply)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,59 +58,59 @@
             this.gv_Apply.Location = new System.Drawing.Point(35, 28);
             this.gv_Apply.Name = "gv_Apply";
             this.gv_Apply.RowTemplate.Height = 30;
-            this.gv_Apply.Size = new System.Drawing.Size(1120, 467);
+            this.gv_Apply.Size = new System.Drawing.Size(1484, 730);
             this.gv_Apply.TabIndex = 1;
-            // 
-            // Opeartion
-            // 
-            this.Opeartion.HeaderText = "操作";
-            this.Opeartion.Name = "Opeartion";
-            // 
-            // 终审状态
-            // 
-            this.终审状态.HeaderText = "终审状态";
-            this.终审状态.Name = "终审状态";
-            // 
-            // 当前状态
-            // 
-            this.当前状态.HeaderText = "当前状态";
-            this.当前状态.Name = "当前状态";
-            // 
-            // 学籍状态
-            // 
-            this.学籍状态.HeaderText = "学籍状态";
-            this.学籍状态.Name = "学籍状态";
-            // 
-            // 允许调配
-            // 
-            this.允许调配.HeaderText = "允许调配";
-            this.允许调配.Name = "允许调配";
-            // 
-            // 专业
-            // 
-            this.专业.HeaderText = "专业";
-            this.专业.Name = "专业";
-            // 
-            // 学校
-            // 
-            this.学校.HeaderText = "学校";
-            this.学校.Name = "学校";
-            // 
-            // 交换学期
-            // 
-            this.交换学期.HeaderText = "交换学期";
-            this.交换学期.Name = "交换学期";
             // 
             // 学生
             // 
             this.学生.HeaderText = "学生";
             this.学生.Name = "学生";
             // 
+            // 交换学期
+            // 
+            this.交换学期.HeaderText = "交换学期";
+            this.交换学期.Name = "交换学期";
+            // 
+            // 学校
+            // 
+            this.学校.HeaderText = "学校";
+            this.学校.Name = "学校";
+            // 
+            // 专业
+            // 
+            this.专业.HeaderText = "专业";
+            this.专业.Name = "专业";
+            // 
+            // 允许调配
+            // 
+            this.允许调配.HeaderText = "允许调配";
+            this.允许调配.Name = "允许调配";
+            // 
+            // 学籍状态
+            // 
+            this.学籍状态.HeaderText = "学籍状态";
+            this.学籍状态.Name = "学籍状态";
+            // 
+            // 当前状态
+            // 
+            this.当前状态.HeaderText = "当前状态";
+            this.当前状态.Name = "当前状态";
+            // 
+            // 终审状态
+            // 
+            this.终审状态.HeaderText = "终审状态";
+            this.终审状态.Name = "终审状态";
+            // 
+            // Opeartion
+            // 
+            this.Opeartion.HeaderText = "操作";
+            this.Opeartion.Name = "Opeartion";
+            // 
             // frm_ApplyExchangeStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 523);
+            this.ClientSize = new System.Drawing.Size(1557, 803);
             this.Controls.Add(this.gv_Apply);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_ApplyExchangeStudent";

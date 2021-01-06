@@ -60,7 +60,7 @@
             this.lkl_MinorRegistration = new System.Windows.Forms.LinkLabel();
             this.lkl_TextbookSubscription = new System.Windows.Forms.LinkLabel();
             this.lkl_TextbookAccountInformation = new System.Windows.Forms.LinkLabel();
-            this.lkl_SelectionOfTeachingMaterials = new System.Windows.Forms.LinkLabel();
+            this.lkl_BookSelection = new System.Windows.Forms.LinkLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.lkl_ClassroomTimetable = new System.Windows.Forms.LinkLabel();
             this.lkl_CourseSchedule = new System.Windows.Forms.LinkLabel();
@@ -156,7 +156,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1391, 657);
+            this.pictureBox1.Size = new System.Drawing.Size(1557, 803);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -318,7 +318,7 @@
             // 
             this.panel_StudentStatus.Location = new System.Drawing.Point(178, 6);
             this.panel_StudentStatus.Name = "panel_StudentStatus";
-            this.panel_StudentStatus.Size = new System.Drawing.Size(1615, 752);
+            this.panel_StudentStatus.Size = new System.Drawing.Size(1557, 803);
             this.panel_StudentStatus.TabIndex = 12;
             // 
             // lkl_GradeExamination
@@ -412,7 +412,7 @@
             this.tbp_TrainingManagement.Controls.Add(this.lkl_MinorRegistration);
             this.tbp_TrainingManagement.Controls.Add(this.lkl_TextbookSubscription);
             this.tbp_TrainingManagement.Controls.Add(this.lkl_TextbookAccountInformation);
-            this.tbp_TrainingManagement.Controls.Add(this.lkl_SelectionOfTeachingMaterials);
+            this.tbp_TrainingManagement.Controls.Add(this.lkl_BookSelection);
             this.tbp_TrainingManagement.Controls.Add(this.label6);
             this.tbp_TrainingManagement.Controls.Add(this.lkl_ClassroomTimetable);
             this.tbp_TrainingManagement.Controls.Add(this.lkl_CourseSchedule);
@@ -489,15 +489,16 @@
             this.lkl_TextbookAccountInformation.TabStop = true;
             this.lkl_TextbookAccountInformation.Text = "教材账目信息";
             // 
-            // lkl_SelectionOfTeachingMaterials
+            // lkl_BookSelection
             // 
-            this.lkl_SelectionOfTeachingMaterials.AutoSize = true;
-            this.lkl_SelectionOfTeachingMaterials.Location = new System.Drawing.Point(30, 615);
-            this.lkl_SelectionOfTeachingMaterials.Name = "lkl_SelectionOfTeachingMaterials";
-            this.lkl_SelectionOfTeachingMaterials.Size = new System.Drawing.Size(116, 18);
-            this.lkl_SelectionOfTeachingMaterials.TabIndex = 83;
-            this.lkl_SelectionOfTeachingMaterials.TabStop = true;
-            this.lkl_SelectionOfTeachingMaterials.Text = "学生教材选用";
+            this.lkl_BookSelection.AutoSize = true;
+            this.lkl_BookSelection.Location = new System.Drawing.Point(30, 615);
+            this.lkl_BookSelection.Name = "lkl_BookSelection";
+            this.lkl_BookSelection.Size = new System.Drawing.Size(116, 18);
+            this.lkl_BookSelection.TabIndex = 83;
+            this.lkl_BookSelection.TabStop = true;
+            this.lkl_BookSelection.Text = "学生教材选用";
+            this.lkl_BookSelection.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_BookSelection_LinkClicked);
             // 
             // label6
             // 
@@ -1021,6 +1022,7 @@
             this.lkl_StudentEvaluation.TabIndex = 60;
             this.lkl_StudentEvaluation.TabStop = true;
             this.lkl_StudentEvaluation.Text = "学生评价";
+            this.lkl_StudentEvaluation.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_StudentEvaluation_LinkClicked);
             // 
             // label3
             // 
@@ -1042,7 +1044,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1727, 791);
+            this.ClientSize = new System.Drawing.Size(1809, 877);
             this.Controls.Add(this.tbc_Home);
             this.Name = "frm_Homepage";
             this.Text = "教务系统";
@@ -1100,7 +1102,7 @@
         private System.Windows.Forms.LinkLabel lkl_MinorRegistration;
         private System.Windows.Forms.LinkLabel lkl_TextbookSubscription;
         private System.Windows.Forms.LinkLabel lkl_TextbookAccountInformation;
-        private System.Windows.Forms.LinkLabel lkl_SelectionOfTeachingMaterials;
+        private System.Windows.Forms.LinkLabel lkl_BookSelection;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel lkl_ClassroomTimetable;
         private System.Windows.Forms.LinkLabel lkl_CourseSchedule;

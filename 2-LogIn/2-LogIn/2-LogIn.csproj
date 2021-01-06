@@ -82,10 +82,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_SocialExaminationRegistration.cs">
+    <Compile Include="frm_FacultyHomepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_SocialExaminationRegistration.Designer.cs">
+    <Compile Include="frm_FacultyHomepage.Designer.cs">
+      <DependentUpon>frm_FacultyHomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FacultyLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FacultyLogin.Designer.cs">
+      <DependentUpon>frm_FacultyLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教学评价\frm_Evaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教学评价\frm_Evaluation.Designer.cs">
+      <DependentUpon>frm_Evaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教学评价\frm_StudentEvaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教学评价\frm_StudentEvaluation.Designer.cs">
+      <DependentUpon>frm_StudentEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教材管理\frm_BookSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教材管理\frm_BookSelection.Designer.cs">
+      <DependentUpon>frm_BookSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="我的成绩\frm_MyScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的成绩\frm_MyScore.Designer.cs">
+      <DependentUpon>frm_MyScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="我的桌面\frm_MessageReply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的桌面\frm_MessageReply.Designer.cs">
+      <DependentUpon>frm_MessageReply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="我的桌面\frm_NoticeReply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的桌面\frm_NoticeReply.Designer.cs">
+      <DependentUpon>frm_NoticeReply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SignUp.Designer.cs">
+      <DependentUpon>frm_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="考试报名\frm_SocialExaminationRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="考试报名\frm_SocialExaminationRegistration.Designer.cs">
       <DependentUpon>frm_SocialExaminationRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="选课管理\frm_ClassroomBorrowingApplication.cs">
@@ -209,7 +263,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_SocialExaminationRegistration.resx">
+    <EmbeddedResource Include="frm_FacultyHomepage.resx">
+      <DependentUpon>frm_FacultyHomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FacultyLogin.resx">
+      <DependentUpon>frm_FacultyLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教学评价\frm_Evaluation.resx">
+      <DependentUpon>frm_Evaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教学评价\frm_StudentEvaluation.resx">
+      <DependentUpon>frm_StudentEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="我的成绩\frm_MyScore.resx">
+      <DependentUpon>frm_MyScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="我的桌面\frm_MessageReply.resx">
+      <DependentUpon>frm_MessageReply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="我的桌面\frm_NoticeReply.resx">
+      <DependentUpon>frm_NoticeReply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SignUp.resx">
+      <DependentUpon>frm_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教材管理\frm_BookSelection.resx">
+      <DependentUpon>frm_BookSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="考试报名\frm_SocialExaminationRegistration.resx">
       <DependentUpon>frm_SocialExaminationRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="选课管理\frm_ClassroomBorrowingApplication.resx">

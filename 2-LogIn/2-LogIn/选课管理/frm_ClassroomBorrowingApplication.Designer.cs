@@ -58,12 +58,15 @@
             this.txb_People = new System.Windows.Forms.TextBox();
             this.btn_Query = new System.Windows.Forms.Button();
             this.cmb_2 = new System.Windows.Forms.ComboBox();
+            this.dgv_Classroom = new System.Windows.Forms.DataGridView();
+            this.btn_Borrow = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Classroom)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(95, 29);
+            this.label1.Location = new System.Drawing.Point(259, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 18);
             this.label1.TabIndex = 0;
@@ -72,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(352, 29);
+            this.label2.Location = new System.Drawing.Point(517, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 18);
             this.label2.TabIndex = 1;
@@ -81,7 +84,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(594, 29);
+            this.label3.Location = new System.Drawing.Point(759, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 18);
             this.label3.TabIndex = 2;
@@ -90,7 +93,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(826, 29);
+            this.label4.Location = new System.Drawing.Point(991, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 18);
             this.label4.TabIndex = 3;
@@ -99,7 +102,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(95, 77);
+            this.label5.Location = new System.Drawing.Point(259, 137);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 18);
             this.label5.TabIndex = 4;
@@ -108,7 +111,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(352, 77);
+            this.label6.Location = new System.Drawing.Point(517, 137);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 18);
             this.label6.TabIndex = 5;
@@ -117,7 +120,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(594, 77);
+            this.label7.Location = new System.Drawing.Point(759, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 18);
             this.label7.TabIndex = 6;
@@ -126,7 +129,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(826, 77);
+            this.label8.Location = new System.Drawing.Point(991, 137);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 18);
             this.label8.TabIndex = 7;
@@ -135,7 +138,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(95, 116);
+            this.label9.Location = new System.Drawing.Point(259, 176);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 18);
             this.label9.TabIndex = 8;
@@ -144,7 +147,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(224, 116);
+            this.label10.Location = new System.Drawing.Point(389, 176);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(26, 18);
             this.label10.TabIndex = 9;
@@ -153,7 +156,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(352, 121);
+            this.label11.Location = new System.Drawing.Point(517, 181);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(62, 18);
             this.label11.TabIndex = 11;
@@ -162,7 +165,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(714, 126);
+            this.label12.Location = new System.Drawing.Point(879, 186);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(26, 18);
             this.label12.TabIndex = 10;
@@ -171,7 +174,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(594, 126);
+            this.label13.Location = new System.Drawing.Point(759, 186);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(62, 18);
             this.label13.TabIndex = 13;
@@ -180,7 +183,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(476, 121);
+            this.label14.Location = new System.Drawing.Point(641, 181);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(26, 18);
             this.label14.TabIndex = 12;
@@ -190,7 +193,8 @@
             // 
             this.cmb_Term.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Term.FormattingEnabled = true;
-            this.cmb_Term.Location = new System.Drawing.Point(152, 25);
+            this.cmb_Term.Location = new System.Drawing.Point(317, 85);
+            this.cmb_Term.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Term.Name = "cmb_Term";
             this.cmb_Term.Size = new System.Drawing.Size(183, 26);
             this.cmb_Term.TabIndex = 14;
@@ -199,7 +203,8 @@
             // 
             this.cmb_Campus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Campus.FormattingEnabled = true;
-            this.cmb_Campus.Location = new System.Drawing.Point(405, 25);
+            this.cmb_Campus.Location = new System.Drawing.Point(570, 85);
+            this.cmb_Campus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Campus.Name = "cmb_Campus";
             this.cmb_Campus.Size = new System.Drawing.Size(183, 26);
             this.cmb_Campus.TabIndex = 15;
@@ -208,7 +213,8 @@
             // 
             this.cmb_TeachingArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_TeachingArea.FormattingEnabled = true;
-            this.cmb_TeachingArea.Location = new System.Drawing.Point(673, 25);
+            this.cmb_TeachingArea.Location = new System.Drawing.Point(838, 85);
+            this.cmb_TeachingArea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_TeachingArea.Name = "cmb_TeachingArea";
             this.cmb_TeachingArea.Size = new System.Drawing.Size(147, 26);
             this.cmb_TeachingArea.TabIndex = 16;
@@ -217,17 +223,18 @@
             // 
             this.cmb_Building.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Building.FormattingEnabled = true;
-            this.cmb_Building.Location = new System.Drawing.Point(899, 25);
+            this.cmb_Building.Location = new System.Drawing.Point(1064, 85);
+            this.cmb_Building.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Building.Name = "cmb_Building";
             this.cmb_Building.Size = new System.Drawing.Size(183, 26);
             this.cmb_Building.TabIndex = 17;
-            this.cmb_Building.SelectedIndexChanged += new System.EventHandler(this.cmb_Building_SelectedIndexChanged);
             // 
             // cmb_Classroom
             // 
             this.cmb_Classroom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Classroom.FormattingEnabled = true;
-            this.cmb_Classroom.Location = new System.Drawing.Point(152, 73);
+            this.cmb_Classroom.Location = new System.Drawing.Point(317, 133);
+            this.cmb_Classroom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Classroom.Name = "cmb_Classroom";
             this.cmb_Classroom.Size = new System.Drawing.Size(183, 26);
             this.cmb_Classroom.TabIndex = 18;
@@ -243,7 +250,8 @@
             "<",
             "<=",
             "<>"});
-            this.cmb_Sign.Location = new System.Drawing.Point(405, 73);
+            this.cmb_Sign.Location = new System.Drawing.Point(570, 133);
+            this.cmb_Sign.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Sign.Name = "cmb_Sign";
             this.cmb_Sign.Size = new System.Drawing.Size(65, 26);
             this.cmb_Sign.TabIndex = 19;
@@ -260,7 +268,8 @@
             "X 锁定",
             "J 借用",
             "◆ 正常上课"});
-            this.cmb_ClassroomStatus.Location = new System.Drawing.Point(673, 73);
+            this.cmb_ClassroomStatus.Location = new System.Drawing.Point(838, 133);
+            this.cmb_ClassroomStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_ClassroomStatus.Name = "cmb_ClassroomStatus";
             this.cmb_ClassroomStatus.Size = new System.Drawing.Size(147, 26);
             this.cmb_ClassroomStatus.TabIndex = 20;
@@ -269,16 +278,18 @@
             // 
             this.cmb_Department.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Department.FormattingEnabled = true;
-            this.cmb_Department.Location = new System.Drawing.Point(918, 73);
+            this.cmb_Department.Location = new System.Drawing.Point(1083, 133);
+            this.cmb_Department.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Department.Name = "cmb_Department";
-            this.cmb_Department.Size = new System.Drawing.Size(183, 26);
+            this.cmb_Department.Size = new System.Drawing.Size(164, 26);
             this.cmb_Department.TabIndex = 21;
             // 
             // cmb_Weeks1
             // 
             this.cmb_Weeks1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Weeks1.FormattingEnabled = true;
-            this.cmb_Weeks1.Location = new System.Drawing.Point(152, 113);
+            this.cmb_Weeks1.Location = new System.Drawing.Point(317, 173);
+            this.cmb_Weeks1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Weeks1.Name = "cmb_Weeks1";
             this.cmb_Weeks1.Size = new System.Drawing.Size(66, 26);
             this.cmb_Weeks1.TabIndex = 22;
@@ -287,7 +298,8 @@
             // 
             this.cmb_Weeks2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Weeks2.FormattingEnabled = true;
-            this.cmb_Weeks2.Location = new System.Drawing.Point(256, 113);
+            this.cmb_Weeks2.Location = new System.Drawing.Point(421, 173);
+            this.cmb_Weeks2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Weeks2.Name = "cmb_Weeks2";
             this.cmb_Weeks2.Size = new System.Drawing.Size(66, 26);
             this.cmb_Weeks2.TabIndex = 23;
@@ -304,7 +316,8 @@
             "五",
             "六",
             "七"});
-            this.cmb_Week1.Location = new System.Drawing.Point(404, 118);
+            this.cmb_Week1.Location = new System.Drawing.Point(569, 178);
+            this.cmb_Week1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Week1.Name = "cmb_Week1";
             this.cmb_Week1.Size = new System.Drawing.Size(66, 26);
             this.cmb_Week1.TabIndex = 24;
@@ -321,7 +334,8 @@
             "五",
             "六",
             "七"});
-            this.cmb_Week2.Location = new System.Drawing.Point(508, 118);
+            this.cmb_Week2.Location = new System.Drawing.Point(673, 178);
+            this.cmb_Week2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Week2.Name = "cmb_Week2";
             this.cmb_Week2.Size = new System.Drawing.Size(66, 26);
             this.cmb_Week2.TabIndex = 25;
@@ -343,26 +357,30 @@
             "第十节",
             "第十一节",
             "第十二节"});
-            this.cmb_1.Location = new System.Drawing.Point(642, 118);
+            this.cmb_1.Location = new System.Drawing.Point(807, 178);
+            this.cmb_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_1.Name = "cmb_1";
             this.cmb_1.Size = new System.Drawing.Size(66, 26);
             this.cmb_1.TabIndex = 26;
             // 
             // txb_People
             // 
-            this.txb_People.Location = new System.Drawing.Point(488, 71);
+            this.txb_People.Location = new System.Drawing.Point(653, 131);
+            this.txb_People.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txb_People.Name = "txb_People";
             this.txb_People.Size = new System.Drawing.Size(100, 28);
             this.txb_People.TabIndex = 28;
             // 
             // btn_Query
             // 
-            this.btn_Query.Location = new System.Drawing.Point(876, 114);
+            this.btn_Query.Location = new System.Drawing.Point(1064, 176);
+            this.btn_Query.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Query.Name = "btn_Query";
             this.btn_Query.Size = new System.Drawing.Size(75, 30);
             this.btn_Query.TabIndex = 29;
             this.btn_Query.Text = "查询";
             this.btn_Query.UseVisualStyleBackColor = true;
+            this.btn_Query.Click += new System.EventHandler(this.btn_Query_Click);
             // 
             // cmb_2
             // 
@@ -381,16 +399,40 @@
             "第十节",
             "第十一节",
             "第十二节"});
-            this.cmb_2.Location = new System.Drawing.Point(746, 117);
+            this.cmb_2.Location = new System.Drawing.Point(911, 176);
+            this.cmb_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_2.Name = "cmb_2";
             this.cmb_2.Size = new System.Drawing.Size(66, 26);
             this.cmb_2.TabIndex = 30;
+            // 
+            // dgv_Classroom
+            // 
+            this.dgv_Classroom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Classroom.Location = new System.Drawing.Point(97, 271);
+            this.dgv_Classroom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgv_Classroom.Name = "dgv_Classroom";
+            this.dgv_Classroom.RowTemplate.Height = 27;
+            this.dgv_Classroom.Size = new System.Drawing.Size(1345, 464);
+            this.dgv_Classroom.TabIndex = 31;
+            // 
+            // btn_Borrow
+            // 
+            this.btn_Borrow.Location = new System.Drawing.Point(1172, 175);
+            this.btn_Borrow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Borrow.Name = "btn_Borrow";
+            this.btn_Borrow.Size = new System.Drawing.Size(75, 30);
+            this.btn_Borrow.TabIndex = 32;
+            this.btn_Borrow.Text = "借用";
+            this.btn_Borrow.UseVisualStyleBackColor = true;
+            this.btn_Borrow.Click += new System.EventHandler(this.btn_Borrow_Click);
             // 
             // frm_ClassroomBorrowingApplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 523);
+            this.ClientSize = new System.Drawing.Size(1557, 803);
+            this.Controls.Add(this.btn_Borrow);
+            this.Controls.Add(this.dgv_Classroom);
             this.Controls.Add(this.cmb_2);
             this.Controls.Add(this.btn_Query);
             this.Controls.Add(this.txb_People);
@@ -422,8 +464,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frm_ClassroomBorrowingApplication";
             this.Text = "frm_ClassroomBorrowingApplication";
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Classroom)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -461,5 +505,7 @@
         private System.Windows.Forms.TextBox txb_People;
         private System.Windows.Forms.Button btn_Query;
         private System.Windows.Forms.ComboBox cmb_2;
+        private System.Windows.Forms.DataGridView dgv_Classroom;
+        private System.Windows.Forms.Button btn_Borrow;
     }
 }

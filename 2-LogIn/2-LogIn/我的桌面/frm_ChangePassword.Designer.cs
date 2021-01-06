@@ -49,7 +49,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(743, 158);
+            this.label7.Location = new System.Drawing.Point(966, 272);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 18);
             this.label7.TabIndex = 29;
@@ -57,7 +57,7 @@
             // 
             // btn_Replace
             // 
-            this.btn_Replace.Location = new System.Drawing.Point(611, 337);
+            this.btn_Replace.Location = new System.Drawing.Point(834, 451);
             this.btn_Replace.Name = "btn_Replace";
             this.btn_Replace.Size = new System.Drawing.Size(81, 31);
             this.btn_Replace.TabIndex = 28;
@@ -67,7 +67,7 @@
             // 
             // btn_Save
             // 
-            this.btn_Save.Location = new System.Drawing.Point(479, 337);
+            this.btn_Save.Location = new System.Drawing.Point(702, 451);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(81, 31);
             this.btn_Save.TabIndex = 27;
@@ -77,7 +77,7 @@
             // 
             // txt_ExPassword
             // 
-            this.txt_ExPassword.Location = new System.Drawing.Point(459, 153);
+            this.txt_ExPassword.Location = new System.Drawing.Point(682, 267);
             this.txt_ExPassword.Name = "txt_ExPassword";
             this.txt_ExPassword.PasswordChar = '*';
             this.txt_ExPassword.Size = new System.Drawing.Size(259, 28);
@@ -85,7 +85,7 @@
             // 
             // txt_NewPassword
             // 
-            this.txt_NewPassword.Location = new System.Drawing.Point(459, 202);
+            this.txt_NewPassword.Location = new System.Drawing.Point(682, 316);
             this.txt_NewPassword.Name = "txt_NewPassword";
             this.txt_NewPassword.PasswordChar = '*';
             this.txt_NewPassword.Size = new System.Drawing.Size(259, 28);
@@ -93,7 +93,7 @@
             // 
             // txt_NewPassword2
             // 
-            this.txt_NewPassword2.Location = new System.Drawing.Point(459, 251);
+            this.txt_NewPassword2.Location = new System.Drawing.Point(682, 365);
             this.txt_NewPassword2.Name = "txt_NewPassword2";
             this.txt_NewPassword2.PasswordChar = '*';
             this.txt_NewPassword2.Size = new System.Drawing.Size(259, 28);
@@ -101,7 +101,7 @@
             // 
             // txt_No
             // 
-            this.txt_No.Location = new System.Drawing.Point(459, 104);
+            this.txt_No.Location = new System.Drawing.Point(682, 218);
             this.txt_No.Name = "txt_No";
             this.txt_No.ReadOnly = true;
             this.txt_No.Size = new System.Drawing.Size(259, 28);
@@ -110,7 +110,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(336, 205);
+            this.label4.Location = new System.Drawing.Point(559, 319);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 18);
             this.label4.TabIndex = 18;
@@ -119,7 +119,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(300, 254);
+            this.label3.Location = new System.Drawing.Point(523, 368);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 18);
             this.label3.TabIndex = 17;
@@ -128,7 +128,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(336, 156);
+            this.label2.Location = new System.Drawing.Point(559, 270);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 18);
             this.label2.TabIndex = 16;
@@ -137,7 +137,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(318, 107);
+            this.label1.Location = new System.Drawing.Point(541, 221);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 18);
             this.label1.TabIndex = 15;
@@ -148,7 +148,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(743, 260);
+            this.label5.Location = new System.Drawing.Point(966, 374);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 18);
             this.label5.TabIndex = 30;
@@ -159,7 +159,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(743, 209);
+            this.label6.Location = new System.Drawing.Point(966, 323);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 18);
             this.label6.TabIndex = 31;
@@ -170,7 +170,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.Control;
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(446, 415);
+            this.label8.Location = new System.Drawing.Point(669, 529);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(287, 18);
             this.label8.TabIndex = 32;
@@ -180,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 523);
+            this.ClientSize = new System.Drawing.Size(1557, 803);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

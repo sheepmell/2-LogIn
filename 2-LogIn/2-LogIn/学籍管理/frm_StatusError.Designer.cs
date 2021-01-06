@@ -58,7 +58,7 @@
             this.gv_StatusError.Location = new System.Drawing.Point(35, 28);
             this.gv_StatusError.Name = "gv_StatusError";
             this.gv_StatusError.RowTemplate.Height = 30;
-            this.gv_StatusError.Size = new System.Drawing.Size(1120, 467);
+            this.gv_StatusError.Size = new System.Drawing.Size(1491, 745);
             this.gv_StatusError.TabIndex = 1;
             // 
             // 原班级
@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 523);
+            this.ClientSize = new System.Drawing.Size(1557, 803);
             this.Controls.Add(this.gv_StatusError);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_StatusError";

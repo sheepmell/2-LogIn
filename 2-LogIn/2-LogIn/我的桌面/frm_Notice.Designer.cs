@@ -33,9 +33,11 @@
             this.tbNoticeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.noticeData = new _2_LogIn.NoticeData();
             this.tb_NoticeTableAdapter = new _2_LogIn.NoticeDataTableAdapters.tb_NoticeTableAdapter();
+            this.gv_NoticeReply = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Notice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbNoticeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noticeData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_NoticeReply)).BeginInit();
             this.SuspendLayout();
             // 
             // gv_Notice
@@ -44,7 +46,7 @@
             this.gv_Notice.Location = new System.Drawing.Point(34, 25);
             this.gv_Notice.Name = "gv_Notice";
             this.gv_Notice.RowTemplate.Height = 30;
-            this.gv_Notice.Size = new System.Drawing.Size(1120, 467);
+            this.gv_Notice.Size = new System.Drawing.Size(1485, 467);
             this.gv_Notice.TabIndex = 0;
             this.gv_Notice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_Notice_CellContentClick);
             // 
@@ -62,11 +64,21 @@
             // 
             this.tb_NoticeTableAdapter.ClearBeforeFill = true;
             // 
+            // gv_NoticeReply
+            // 
+            this.gv_NoticeReply.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gv_NoticeReply.Location = new System.Drawing.Point(34, 533);
+            this.gv_NoticeReply.Name = "gv_NoticeReply";
+            this.gv_NoticeReply.RowTemplate.Height = 30;
+            this.gv_NoticeReply.Size = new System.Drawing.Size(1485, 185);
+            this.gv_NoticeReply.TabIndex = 1;
+            // 
             // frm_Notice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 523);
+            this.ClientSize = new System.Drawing.Size(1557, 803);
+            this.Controls.Add(this.gv_NoticeReply);
             this.Controls.Add(this.gv_Notice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_Notice";
@@ -74,6 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gv_Notice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbNoticeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noticeData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_NoticeReply)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -84,5 +97,6 @@
         private NoticeData noticeData;
         private System.Windows.Forms.BindingSource tbNoticeBindingSource;
         private NoticeDataTableAdapters.tb_NoticeTableAdapter tb_NoticeTableAdapter;
+        private System.Windows.Forms.DataGridView gv_NoticeReply;
     }
 }

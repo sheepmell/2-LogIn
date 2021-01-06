@@ -48,7 +48,7 @@
             this.gv_StatusAlarm.Location = new System.Drawing.Point(35, 28);
             this.gv_StatusAlarm.Name = "gv_StatusAlarm";
             this.gv_StatusAlarm.RowTemplate.Height = 30;
-            this.gv_StatusAlarm.Size = new System.Drawing.Size(1120, 467);
+            this.gv_StatusAlarm.Size = new System.Drawing.Size(1482, 744);
             this.gv_StatusAlarm.TabIndex = 1;
             // 
             // No
@@ -75,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 523);
+            this.ClientSize = new System.Drawing.Size(1557, 803);
             this.Controls.Add(this.gv_StatusAlarm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_StatusAlarm";

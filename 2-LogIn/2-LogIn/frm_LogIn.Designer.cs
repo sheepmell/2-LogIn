@@ -33,11 +33,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_No = new System.Windows.Forms.TextBox();
             this.txt_Password = new System.Windows.Forms.TextBox();
+            this.btn_SignUp = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_LogIn
             // 
-            this.btn_LogIn.Location = new System.Drawing.Point(184, 193);
+            this.btn_LogIn.Location = new System.Drawing.Point(190, 182);
             this.btn_LogIn.Name = "btn_LogIn";
             this.btn_LogIn.Size = new System.Drawing.Size(75, 39);
             this.btn_LogIn.TabIndex = 0;
@@ -79,11 +81,33 @@
             this.txt_Password.TabIndex = 4;
             this.txt_Password.TextChanged += new System.EventHandler(this.txt_No_TextChanged);
             // 
+            // btn_SignUp
+            // 
+            this.btn_SignUp.Location = new System.Drawing.Point(296, 182);
+            this.btn_SignUp.Name = "btn_SignUp";
+            this.btn_SignUp.Size = new System.Drawing.Size(75, 39);
+            this.btn_SignUp.TabIndex = 5;
+            this.btn_SignUp.Text = "注册";
+            this.btn_SignUp.UseVisualStyleBackColor = true;
+            this.btn_SignUp.Click += new System.EventHandler(this.btn_SignUp_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(33, 182);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 39);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "教师登录";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frm_LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 274);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_SignUp);
             this.Controls.Add(this.txt_Password);
             this.Controls.Add(this.txt_No);
             this.Controls.Add(this.label2);
@@ -104,6 +128,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_No;
         private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.Button btn_SignUp;
+        private System.Windows.Forms.Button button1;
     }
 }
 

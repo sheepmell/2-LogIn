@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SmartLinli.DatabaseDevelopement;
+using System;
 using System.Windows.Forms;
-using SmartLinli.DatabaseDevelopement;
 
 namespace _2_LogIn
 {
@@ -17,11 +10,12 @@ namespace _2_LogIn
         public frm_SocialExaminationRegistration()
         {
             InitializeComponent();
-            this.LoadExams();
+            
         }
         public frm_SocialExaminationRegistration(string studentno) : this()
         {
             this._StudentNo = studentno;
+            this.LoadExams();
         }
         //载入考试
         private void LoadExams()
@@ -48,15 +42,26 @@ namespace _2_LogIn
         //选考
         private void btn_Select_Click(object sender, EventArgs e)
         {
+            SqlHelper sqlHelper = new SqlHelper();
             string status = this.dgv_AllExams.CurrentRow.Cells["Status"].Value.ToString();
             if (status == "已选")
             {
                 MessageBox.Show("该考试已选！请勿重复选修！");
                 return;
             }
-            SqlHelper sqlHelper = new SqlHelper();
-            string currentExamNo = this.dgv_AllExams.CurrentRow.Cells["No"].Value.ToString();
-            sqlHelper.QuickSubmit($"INSERT dbo.tb_StudentSocialExam(StudentNo,SocialExamNo)VALUES('{this._StudentNo}','{currentExamNo}')");
+            DateTime deadline = Convert.ToDateTime(this.dgv_AllExams.CurrentRow.Cells["Deadline"].Value);
+
+            if (DateTime.Now < deadline)
+            {
+                string currentExamNo = this.dgv_AllExams.CurrentRow.Cells["No"].Value.ToString();
+                sqlHelper.QuickSubmit($"INSERT dbo.tb_StudentSocialExam(StudentNo,SocialExamNo)VALUES('{this._StudentNo}','{currentExamNo}')");
+                MessageBox.Show("报名成功！");
+            }
+            else
+            {
+                MessageBox.Show("已过报名期限！报名失败！");
+                return;
+            }
             this.LoadExams();
         }
         //退考

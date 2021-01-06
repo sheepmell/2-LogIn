@@ -151,6 +151,11 @@ namespace _2_LogIn
             this.panel_StudentStatus.Controls.Clear();
             this.panel_StudentStatus.Controls.Add(frm_CourseScore);
             frm_CourseScore.Show();
+            //frm_MyScore frm_MyScore = new frm_MyScore(_StudentNo);
+            //frm_MyScore.TopLevel = false;
+            //this.panel_StudentStatus.Controls.Clear();
+            //this.panel_StudentStatus.Controls.Add(frm_MyScore);
+            //frm_MyScore.Show();
         }
         //等级考试查询
         private void lkl_GradeExamination_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -187,6 +192,24 @@ namespace _2_LogIn
             this.panel_ExaminationRegistration.Controls.Clear();
             this.panel_ExaminationRegistration.Controls.Add(frm_SocialExaminationRegistration);
             frm_SocialExaminationRegistration.Show();
+        }
+        //教材选用
+        private void lkl_BookSelection_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_BookSelection frm_BookSelection = new frm_BookSelection(this._StudentNo);
+            frm_BookSelection.TopLevel = false;
+            this.panel_TrainingManagement.Controls.Clear();
+            this.panel_TrainingManagement.Controls.Add(frm_BookSelection);
+            frm_BookSelection.Show();
+        }
+        //学生评价
+        private void lkl_StudentEvaluation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_StudentEvaluation frm_StudentEvaluation = new frm_StudentEvaluation(this._StudentNo);
+            frm_StudentEvaluation.TopLevel = false;
+            this.panel_TeachingEvaluation.Controls.Clear();
+            this.panel_TeachingEvaluation.Controls.Add(frm_StudentEvaluation);
+            frm_StudentEvaluation.Show();
         }
     }
 }

@@ -17,11 +17,12 @@ namespace _2_LogIn
         public frm_StudentCoursSelectionCenter()
         {
             InitializeComponent();
-            this.LoadCourses();
+            
         }
         public frm_StudentCoursSelectionCenter(string studentno) : this()
         {
             this._StudentNo = studentno;
+            this.LoadCourses();
         }
         //载入课程
         private void LoadCourses()

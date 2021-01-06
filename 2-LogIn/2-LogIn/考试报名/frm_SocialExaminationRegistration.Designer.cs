@@ -38,7 +38,7 @@
             // 
             // btn_Reject
             // 
-            this.btn_Reject.Location = new System.Drawing.Point(795, 244);
+            this.btn_Reject.Location = new System.Drawing.Point(1011, 348);
             this.btn_Reject.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Reject.Name = "btn_Reject";
             this.btn_Reject.Size = new System.Drawing.Size(112, 35);
@@ -48,7 +48,7 @@
             // 
             // btn_Select
             // 
-            this.btn_Select.Location = new System.Drawing.Point(283, 244);
+            this.btn_Select.Location = new System.Drawing.Point(530, 348);
             this.btn_Select.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Select.Name = "btn_Select";
             this.btn_Select.Size = new System.Drawing.Size(109, 35);
@@ -60,28 +60,28 @@
             // dgv_SelectedExams
             // 
             this.dgv_SelectedExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_SelectedExams.Location = new System.Drawing.Point(283, 298);
+            this.dgv_SelectedExams.Location = new System.Drawing.Point(87, 407);
             this.dgv_SelectedExams.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_SelectedExams.Name = "dgv_SelectedExams";
             this.dgv_SelectedExams.RowTemplate.Height = 23;
-            this.dgv_SelectedExams.Size = new System.Drawing.Size(624, 212);
+            this.dgv_SelectedExams.Size = new System.Drawing.Size(1377, 346);
             this.dgv_SelectedExams.TabIndex = 9;
             // 
             // dgv_AllExams
             // 
             this.dgv_AllExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_AllExams.Location = new System.Drawing.Point(283, 13);
+            this.dgv_AllExams.Location = new System.Drawing.Point(87, 38);
             this.dgv_AllExams.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_AllExams.Name = "dgv_AllExams";
             this.dgv_AllExams.RowTemplate.Height = 23;
-            this.dgv_AllExams.Size = new System.Drawing.Size(624, 205);
+            this.dgv_AllExams.Size = new System.Drawing.Size(1377, 291);
             this.dgv_AllExams.TabIndex = 8;
             // 
             // frm_SocialExaminationRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 523);
+            this.ClientSize = new System.Drawing.Size(1557, 803);
             this.Controls.Add(this.btn_Reject);
             this.Controls.Add(this.btn_Select);
             this.Controls.Add(this.dgv_SelectedExams);

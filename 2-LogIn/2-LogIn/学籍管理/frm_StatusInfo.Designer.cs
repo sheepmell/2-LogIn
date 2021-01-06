@@ -56,7 +56,7 @@
             this.gv_Info.Location = new System.Drawing.Point(26, 30);
             this.gv_Info.Name = "gv_Info";
             this.gv_Info.RowTemplate.Height = 30;
-            this.gv_Info.Size = new System.Drawing.Size(1120, 467);
+            this.gv_Info.Size = new System.Drawing.Size(1505, 733);
             this.gv_Info.TabIndex = 2;
             // 
             // 序号
@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 523);
+            this.ClientSize = new System.Drawing.Size(1557, 803);
             this.Controls.Add(this.gv_Info);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_StatusInfo";

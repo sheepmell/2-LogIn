@@ -11,34 +11,31 @@ using SmartLinli.DatabaseDevelopement;
 
 namespace _2_LogIn
 {
-    public partial class frm_CourseScore : Form
+    public partial class frm_MyScore : Form
     {
         private string _StudentNo;
-        public frm_CourseScore()
+        public frm_MyScore()
         {
             InitializeComponent();
         }
-
-        public frm_CourseScore(string studentNo) : this()
+        public frm_MyScore(string studentno) : this()
         {
-            this._StudentNo = studentNo;
-            this.LoadCourse();
+            this._StudentNo = studentno;
+            this.LoadScore();
         }
-        private void LoadCourse()
+        private void LoadScore()
         {
-            string commandText = $@"SELECT C.Name , C.Credit ,F.Name ,C.EvaluationLimit 
+            
+
+            SqlHelper sqlHelper = new SqlHelper();
+            string commandText = $@"SELECT C.Name , C.Credit ,F.Name ,SS.BasicScore ,
+                                             SS.FinalScore ,SS.TotalScore
                                     FROM tb_StudentScore AS SS
                                         JOIN tb_Course AS C ON C.No = SS.CourseNo
                                         JOIN tb_Faculty AS F ON F.No = SS.FacultyNo
                                     WHERE
                                         SS.StudentNo = '{this._StudentNo}'";
-            SqlHelper sqlHelper = new SqlHelper();
-            sqlHelper.QuickFill(commandText, gv_CourseMessage);
-        }
-        private void btn_Query_Click(object sender, EventArgs e)
-        {
-            DateTime deadline = Convert.ToDateTime(this.gv_CourseMessage.CurrentRow.Cells["EvaluationLimit"].Value);
-
+            sqlHelper.QuickFill(commandText, gv_Score);
         }
     }
 }

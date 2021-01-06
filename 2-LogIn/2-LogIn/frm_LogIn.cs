@@ -68,5 +68,19 @@ namespace _2_LogIn
         {
             this.btn_LogIn.Enabled = this.txt_No.Text != "";
         }
+        //注册
+        private void btn_SignUp_Click(object sender, EventArgs e)
+        {
+            frm_SignUp frm_SignUp = new frm_SignUp();
+            frm_SignUp.Show();
+            this.Close();
+        }
+        //教师登录
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm_FacultyLogin frm_FacultyLogin = new frm_FacultyLogin();
+            frm_FacultyLogin.Show();
+            this.Close();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace _2_LogIn
 {
-    partial class frm_GradeExamination
+    partial class frm_MyScore
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gv_ExamResult = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.gv_ExamResult)).BeginInit();
+            this.gv_Score = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Score)).BeginInit();
             this.SuspendLayout();
             // 
-            // gv_ExamResult
+            // gv_Score
             // 
-            this.gv_ExamResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gv_ExamResult.Location = new System.Drawing.Point(35, 23);
-            this.gv_ExamResult.Name = "gv_ExamResult";
-            this.gv_ExamResult.RowTemplate.Height = 30;
-            this.gv_ExamResult.Size = new System.Drawing.Size(1481, 747);
-            this.gv_ExamResult.TabIndex = 0;
+            this.gv_Score.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gv_Score.Location = new System.Drawing.Point(66, 36);
+            this.gv_Score.Name = "gv_Score";
+            this.gv_Score.RowTemplate.Height = 30;
+            this.gv_Score.Size = new System.Drawing.Size(1431, 730);
+            this.gv_Score.TabIndex = 0;
             // 
-            // frm_GradeExamination
+            // frm_MyScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1557, 803);
-            this.Controls.Add(this.gv_ExamResult);
+            this.Controls.Add(this.gv_Score);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_GradeExamination";
-            this.Text = "frm_GradeExamination";
-            ((System.ComponentModel.ISupportInitialize)(this.gv_ExamResult)).EndInit();
+            this.Name = "frm_MyScore";
+            this.Text = "frm_MyScore";
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Score)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView gv_ExamResult;
+        private System.Windows.Forms.DataGridView gv_Score;
     }
 }
